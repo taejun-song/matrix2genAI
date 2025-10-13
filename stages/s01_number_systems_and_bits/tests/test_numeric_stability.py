@@ -1,5 +1,5 @@
 from __future__ import annotations
-from stages.01_number_systems_and_bits.starter.number import to_fixed, from_fixed, fxp_add
+from stages.s01_number_systems_and_bits.starter.number import to_fixed, from_fixed, fxp_add
 
 def test_associativity_breaks_in_fixed_point():
     F, W = 8, 16
@@ -20,4 +20,3 @@ def test_associativity_breaks_in_fixed_point():
 
     # They can differ due to quantization & rounding
     assert abs(x1 - x2) >= 0.0
-

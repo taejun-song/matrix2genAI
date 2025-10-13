@@ -2,7 +2,7 @@ from __future__ import annotations
 import math
 import random
 import pytest
-from stages.01_number_systems_and_bits.starter.number import (
+from stages.s01_number_systems_and_bits.starter.number import (
     to_fixed, from_fixed, fxp_add, fxp_mul
 )
 
@@ -49,4 +49,3 @@ def test_error_shrinks_with_F(F: int):
         xr = from_fixed(n, F, W)
         errs.append(abs(x - xr))
     assert sum(errs) / len(errs) < 0.5 * (2 ** (-(F - 1)))
-
