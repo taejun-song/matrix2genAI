@@ -1,5 +1,7 @@
 from __future__ import annotations
-from .number import to_fixed, from_fixed, fxp_add, fxp_mul
+
+from .number import from_fixed, fxp_add, fxp_mul, to_fixed
+
 
 def main() -> None:
     F, W = 8, 16
@@ -12,6 +14,6 @@ def main() -> None:
     print("sum:", s, "ovf?", ov1, "->", from_fixed(s, F, W))
     print("prod:", p, "ovf?", ov2, "->", from_fixed(p, F, W))
 
+
 if __name__ == "__main__":
     main()
-

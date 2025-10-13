@@ -1,5 +1,6 @@
 from __future__ import annotations
-from typing import Tuple, Literal
+
+from typing import Literal
 
 Mode = Literal["wrap", "saturate"]
 
@@ -41,7 +42,7 @@ def _saturate_signed(n: int, W: int) -> int:
     return max(lo, min(hi, n))
 
 
-def fxp_add(a: int, b: int, F: int, W: int = 16, mode: Mode = "wrap") -> Tuple[int, bool]:
+def fxp_add(a: int, b: int, F: int, W: int = 16, mode: Mode = "wrap") -> tuple[int, bool]:
     """TODO: fixed-point add. Return (sum, overflow_flag). a,b are W-bit two's complement ints."""
     # 1) interpret a,b as signed
     # 2) compute s = a + b
@@ -50,7 +51,7 @@ def fxp_add(a: int, b: int, F: int, W: int = 16, mode: Mode = "wrap") -> Tuple[i
     raise NotImplementedError
 
 
-def fxp_mul(a: int, b: int, F: int, W: int = 16, mode: Mode = "wrap") -> Tuple[int, bool]:
+def fxp_mul(a: int, b: int, F: int, W: int = 16, mode: Mode = "wrap") -> tuple[int, bool]:
     """
     TODO: fixed-point multiply.
     a,b are W-bit two's complement ints representing values with F fractional bits.
@@ -59,4 +60,3 @@ def fxp_mul(a: int, b: int, F: int, W: int = 16, mode: Mode = "wrap") -> Tuple[i
     # Hint: (a_real * b_real) = (a * b) / 2^F in integer domain.
     # Compute wide product, then shift, then wrap/saturate.
     raise NotImplementedError
-

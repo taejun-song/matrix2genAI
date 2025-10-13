@@ -1,19 +1,21 @@
 from __future__ import annotations
-import math
-import random
-import pytest
-from stages.s01_number_systems_and_bits.starter.number import (
-    to_fixed, from_fixed, fxp_add, fxp_mul
-)
 
-def test_roundtrip_small_values():
+import random
+
+import pytest
+
+from stages.s01_number_systems_and_bits.starter.number import from_fixed, fxp_add, fxp_mul, to_fixed
+
+
+def test_roundtrip_small_values() -> None:
     F, W = 8, 16
     for x in [0.0, 0.5, -0.5, 1.25, -1.75, 3.125]:
         n = to_fixed(x, F, W)
         xr = from_fixed(n, F, W)
         assert abs(x - xr) <= 2 ** (-(F + 1)) + 1e-12
 
-def test_add_basic():
+
+def test_add_basic() -> None:
     F, W = 8, 16
     a = to_fixed(0.75, F, W)
     b = to_fixed(0.50, F, W)
@@ -21,7 +23,8 @@ def test_add_basic():
     assert not ov
     assert abs(from_fixed(s, F, W) - 1.25) <= 2 ** (-(F + 1)) + 1e-12
 
-def test_mul_basic():
+
+def test_mul_basic() -> None:
     F, W = 8, 16
     a = to_fixed(1.5, F, W)
     b = to_fixed(-0.5, F, W)
@@ -29,17 +32,19 @@ def test_mul_basic():
     assert not ov
     assert abs(from_fixed(p, F, W) - (-0.75)) <= 2 ** (-(F + 1)) + 1e-12
 
-def test_saturation_overflow():
+
+def test_saturation_overflow() -> None:
     F, W = 8, 16
     big = to_fixed(100.0, F, W)
     s, ov = fxp_add(big, big, F, W, mode="saturate")
     assert ov
     # should be clamped to max representable
-    hi = (2 ** (W - 1) - 1) / (2 ** F)
+    hi = (2 ** (W - 1) - 1) / (2**F)
     assert abs(from_fixed(s, F, W) - hi) <= 1e-6
 
+
 @pytest.mark.parametrize("F", [4, 8, 12])
-def test_error_shrinks_with_F(F: int):
+def test_error_shrinks_with_F(F: int) -> None:
     W = 16
     random.seed(0)
     errs = []

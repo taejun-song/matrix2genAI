@@ -1,7 +1,9 @@
 from __future__ import annotations
-from stages.s01_number_systems_and_bits.starter.number import to_fixed, from_fixed, fxp_add
 
-def test_associativity_breaks_in_fixed_point():
+from stages.s01_number_systems_and_bits.starter.number import from_fixed, fxp_add, to_fixed
+
+
+def test_associativity_breaks_in_fixed_point() -> None:
     F, W = 8, 16
     a = to_fixed(100.0, F, W)
     b = to_fixed(1e-2, F, W)
