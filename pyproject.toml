@@ -17,6 +17,8 @@ torch = ["torch"]
 dev-dependencies = [
   "pytest>=8",
   "pytest-cov>=5",
+  "pytest-json-report>=1.5",
+  "pytest-timeout>=2.3",
   "ruff>=0.6",
   "mypy>=1.10",
 ]
