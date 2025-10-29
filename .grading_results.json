@@ -1,0 +1,3271 @@
+{
+  "created": 1761019280.135947,
+  "duration": 2.1611340045928955,
+  "exitcode": 1,
+  "root": "/Users/taejunsong/workspace/matrix2genAI",
+  "environment": {},
+  "summary": {
+    "failed": 60,
+    "total": 60,
+    "collected": 60
+  },
+  "collectors": [
+    {
+      "nodeid": "",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra",
+          "type": "Package"
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/starter",
+      "outcome": "passed",
+      "result": []
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestQRDecomposition",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestQRDecomposition::test_basic_qr",
+          "type": "Function",
+          "lineno": 14
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestQRDecomposition::test_orthonormality",
+          "type": "Function",
+          "lineno": 23
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestQRDecomposition::test_tall_matrix",
+          "type": "Function",
+          "lineno": 29
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestPowerIteration",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestPowerIteration::test_symmetric_matrix",
+          "type": "Function",
+          "lineno": 36
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestPowerIteration::test_3x3_matrix",
+          "type": "Function",
+          "lineno": 42
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestPowerIteration::test_dominant_eigenvalue_found",
+          "type": "Function",
+          "lineno": 47
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive::test_2x2_matrix",
+          "type": "Function",
+          "lineno": 57
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive::test_3x3_matrix",
+          "type": "Function",
+          "lineno": 63
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive::test_identity_matrix",
+          "type": "Function",
+          "lineno": 69
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive::test_singular_matrix",
+          "type": "Function",
+          "lineno": 74
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU::test_2x2_matrix",
+          "type": "Function",
+          "lineno": 81
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU::test_3x3_matrix",
+          "type": "Function",
+          "lineno": 87
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU::test_larger_matrix",
+          "type": "Function",
+          "lineno": 93
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU::test_matches_recursive",
+          "type": "Function",
+          "lineno": 100
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestQRDecomposition",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestPowerIteration",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU",
+          "type": "Class"
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestForwardSubstitution",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestForwardSubstitution::test_basic_solve",
+          "type": "Function",
+          "lineno": 14
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestForwardSubstitution::test_identity_matrix",
+          "type": "Function",
+          "lineno": 20
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestForwardSubstitution::test_singular_raises",
+          "type": "Function",
+          "lineno": 26
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestBackwardSubstitution",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestBackwardSubstitution::test_basic_solve",
+          "type": "Function",
+          "lineno": 34
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestBackwardSubstitution::test_identity_matrix",
+          "type": "Function",
+          "lineno": 40
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination::test_basic_solve",
+          "type": "Function",
+          "lineno": 48
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination::test_identity_system",
+          "type": "Function",
+          "lineno": 54
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination::test_larger_system",
+          "type": "Function",
+          "lineno": 60
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination::test_singular_raises",
+          "type": "Function",
+          "lineno": 69
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition::test_basic_decomposition",
+          "type": "Function",
+          "lineno": 77
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition::test_3x3_decomposition",
+          "type": "Function",
+          "lineno": 83
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition::test_identity_matrix",
+          "type": "Function",
+          "lineno": 92
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition::test_random_matrix",
+          "type": "Function",
+          "lineno": 98
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestForwardSubstitution",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestBackwardSubstitution",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition",
+          "type": "Class"
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive::test_basic_multiply",
+          "type": "Function",
+          "lineno": 15
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive::test_identity_multiply",
+          "type": "Function",
+          "lineno": 22
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive::test_non_square_multiply",
+          "type": "Function",
+          "lineno": 28
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive::test_dimension_mismatch",
+          "type": "Function",
+          "lineno": 35
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyVectorized",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyVectorized::test_basic_multiply",
+          "type": "Function",
+          "lineno": 43
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyVectorized::test_matches_naive",
+          "type": "Function",
+          "lineno": 50
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTranspose",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTranspose::test_basic_transpose",
+          "type": "Function",
+          "lineno": 60
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTranspose::test_square_matrix",
+          "type": "Function",
+          "lineno": 66
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTranspose::test_double_transpose",
+          "type": "Function",
+          "lineno": 72
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTrace",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTrace::test_basic_trace",
+          "type": "Function",
+          "lineno": 79
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTrace::test_identity_matrix",
+          "type": "Function",
+          "lineno": 84
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTrace::test_non_square_raises",
+          "type": "Function",
+          "lineno": 89
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestFrobeniusNorm",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestFrobeniusNorm::test_basic_norm",
+          "type": "Function",
+          "lineno": 96
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestFrobeniusNorm::test_identity_matrix",
+          "type": "Function",
+          "lineno": 102
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestFrobeniusNorm::test_zero_matrix",
+          "type": "Function",
+          "lineno": 108
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyVectorized",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTranspose",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTrace",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestFrobeniusNorm",
+          "type": "Class"
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorAdd",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorAdd::test_basic_addition",
+          "type": "Function",
+          "lineno": 15
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorAdd::test_dimension_mismatch",
+          "type": "Function",
+          "lineno": 22
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorAdd::test_zero_vector",
+          "type": "Function",
+          "lineno": 28
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorScalarMultiply",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorScalarMultiply::test_basic_multiply",
+          "type": "Function",
+          "lineno": 36
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorScalarMultiply::test_zero_scalar",
+          "type": "Function",
+          "lineno": 42
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorScalarMultiply::test_negative_scalar",
+          "type": "Function",
+          "lineno": 47
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestDotProduct",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestDotProduct::test_basic_dot_product",
+          "type": "Function",
+          "lineno": 55
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestDotProduct::test_orthogonal_vectors",
+          "type": "Function",
+          "lineno": 62
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestDotProduct::test_dimension_mismatch",
+          "type": "Function",
+          "lineno": 68
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm::test_l2_norm",
+          "type": "Function",
+          "lineno": 76
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm::test_l1_norm",
+          "type": "Function",
+          "lineno": 81
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm::test_inf_norm",
+          "type": "Function",
+          "lineno": 86
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm::test_zero_vector",
+          "type": "Function",
+          "lineno": 91
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_identical_vectors",
+          "type": "Function",
+          "lineno": 98
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_opposite_vectors",
+          "type": "Function",
+          "lineno": 103
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_orthogonal_vectors",
+          "type": "Function",
+          "lineno": 109
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_zero_vector",
+          "type": "Function",
+          "lineno": 115
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_dimension_mismatch",
+          "type": "Function",
+          "lineno": 121
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorAdd",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorScalarMultiply",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestDotProduct",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm",
+          "type": "Class"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity",
+          "type": "Class"
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py",
+          "type": "Module"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+          "type": "Module"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+          "type": "Module"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "stages/s02_linear_algebra/starter",
+          "type": "Package"
+        },
+        {
+          "nodeid": "stages/s02_linear_algebra/tests",
+          "type": "Package"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestQRDecomposition::test_basic_qr",
+      "lineno": 14,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_qr",
+        "TestQRDecomposition",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 0.00025787483900785446,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010979105718433857,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 28,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 17,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 28,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestQRDecomposition object at 0x1016b7b10>\n\n    def test_basic_qr(self) -> None:\n        A = np.array([[12.0, -51.0, 4.0], [6.0, 167.0, -68.0], [-4.0, 24.0, -41.0]])\n>       Q, R = qr_decomposition_gram_schmidt(A)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:17: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 12., -51.,   4.],\n       [  6., 167., -68.],\n       [ -4.,  24., -41.]])\n\n    def qr_decomposition_gram_schmidt(A: np.ndarray) -> tuple[np.ndarray, np.ndarray]:\n        \"\"\"\n        Decompose A = QR using Gram-Schmidt orthogonalization.\n    \n        Args:\n            A: Matrix of shape (m, n) with linearly independent columns\n    \n        Returns:\n            (Q, R) where:\n            - Q is orthogonal matrix (Q^T Q = I), shape (m, n)\n            - R is upper triangular matrix, shape (n, n)\n    \n        Raises:\n            ValueError: If A has linearly dependent columns\n    \n        Hint: Modified Gram-Schmidt for better numerical stability\n        1. For each column a_i of A:\n           - Start with u_i = a_i\n           - Subtract projections onto previous q_j: u_i -= (q_j^T a_i) q_j\n           - Normalize: q_i = u_i / ||u_i||\n           - Store R[j,i] = q_j^T a_i\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:28: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 0.00014224997721612453,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestQRDecomposition::test_orthonormality",
+      "lineno": 23,
+      "outcome": "failed",
+      "keywords": [
+        "test_orthonormality",
+        "TestQRDecomposition",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 0.00010616588406264782,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 1.4346113330684602,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 28,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 27,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 28,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestQRDecomposition object at 0x101b07990>\n\n    def test_orthonormality(self) -> None:\n        np.random.seed(42)\n        A = np.random.randn(5, 3)\n>       Q, R = qr_decomposition_gram_schmidt(A)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 0.49671415, -0.1382643 ,  0.64768854],\n       [ 1.52302986, -0.23415337, -0.23413696],\n       [ 1.57921282,  0.76743473, -0.46947439],\n       [ 0.54256004, -0.46341769, -0.46572975],\n       [ 0.24196227, -1.91328024, -1.72491783]])\n\n    def qr_decomposition_gram_schmidt(A: np.ndarray) -> tuple[np.ndarray, np.ndarray]:\n        \"\"\"\n        Decompose A = QR using Gram-Schmidt orthogonalization.\n    \n        Args:\n            A: Matrix of shape (m, n) with linearly independent columns\n    \n        Returns:\n            (Q, R) where:\n            - Q is orthogonal matrix (Q^T Q = I), shape (m, n)\n            - R is upper triangular matrix, shape (n, n)\n    \n        Raises:\n            ValueError: If A has linearly dependent columns\n    \n        Hint: Modified Gram-Schmidt for better numerical stability\n        1. For each column a_i of A:\n           - Start with u_i = a_i\n           - Subtract projections onto previous q_j: u_i -= (q_j^T a_i) q_j\n           - Normalize: q_i = u_i / ||u_i||\n           - Store R[j,i] = q_j^T a_i\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:28: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 0.00011216709390282631,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestQRDecomposition::test_tall_matrix",
+      "lineno": 29,
+      "outcome": "failed",
+      "keywords": [
+        "test_tall_matrix",
+        "TestQRDecomposition",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.383308209478855e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.512505494058132e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 28,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 32,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 28,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestQRDecomposition object at 0x101afc410>\n\n    def test_tall_matrix(self) -> None:\n        A = np.array([[1.0, 0.0], [1.0, 1.0], [0.0, 1.0]])\n>       Q, R = qr_decomposition_gram_schmidt(A)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 0.],\n       [1., 1.],\n       [0., 1.]])\n\n    def qr_decomposition_gram_schmidt(A: np.ndarray) -> tuple[np.ndarray, np.ndarray]:\n        \"\"\"\n        Decompose A = QR using Gram-Schmidt orthogonalization.\n    \n        Args:\n            A: Matrix of shape (m, n) with linearly independent columns\n    \n        Returns:\n            (Q, R) where:\n            - Q is orthogonal matrix (Q^T Q = I), shape (m, n)\n            - R is upper triangular matrix, shape (n, n)\n    \n        Raises:\n            ValueError: If A has linearly dependent columns\n    \n        Hint: Modified Gram-Schmidt for better numerical stability\n        1. For each column a_i of A:\n           - Start with u_i = a_i\n           - Subtract projections onto previous q_j: u_i -= (q_j^T a_i) q_j\n           - Normalize: q_i = u_i / ||u_i||\n           - Store R[j,i] = q_j^T a_i\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:28: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.341708987951279e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestPowerIteration::test_symmetric_matrix",
+      "lineno": 36,
+      "outcome": "failed",
+      "keywords": [
+        "test_symmetric_matrix",
+        "TestPowerIteration",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 5.7499855756759644e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 7.995800115168095e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 56,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 39,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 56,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestPowerIteration object at 0x101afcad0>\n\n    def test_symmetric_matrix(self) -> None:\n        A = np.array([[4.0, 1.0], [1.0, 3.0]])\n>       eigenvalue, eigenvector = power_iteration(A)\n                                  ^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[4., 1.],\n       [1., 3.]]), num_iters = 100, tol = 1e-06\n\n    def power_iteration(\n        A: np.ndarray, num_iters: int = 100, tol: float = 1e-6\n    ) -> tuple[float, np.ndarray]:\n        \"\"\"\n        Find dominant eigenvalue and eigenvector using power iteration.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n            num_iters: Maximum number of iterations\n            tol: Convergence tolerance for eigenvalue\n    \n        Returns:\n            (eigenvalue, eigenvector) where:\n            - eigenvalue: Dominant eigenvalue (largest magnitude)\n            - eigenvector: Corresponding eigenvector, normalized to ||v|| = 1\n    \n        Hint: Power iteration algorithm\n        1. Start with random vector v\n        2. Repeat:\n           - v_new = A @ v\n           - v_new = v_new / ||v_new||  (normalize)\n           - eigenvalue = v^T A v  (Rayleigh quotient)\n           - Check convergence: if change in eigenvalue < tol, stop\n        3. Return eigenvalue and eigenvector\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:56: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.037500083446503e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestPowerIteration::test_3x3_matrix",
+      "lineno": 42,
+      "outcome": "failed",
+      "keywords": [
+        "test_3x3_matrix",
+        "TestPowerIteration",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.462501525878906e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010683317668735981,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 56,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 45,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 56,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestPowerIteration object at 0x101afd0d0>\n\n    def test_3x3_matrix(self) -> None:\n        A = np.array([[6.0, -2.0, 2.0], [-2.0, 3.0, -1.0], [2.0, -1.0, 3.0]])\n>       eigenvalue, eigenvector = power_iteration(A, num_iters=200)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 6., -2.,  2.],\n       [-2.,  3., -1.],\n       [ 2., -1.,  3.]])\nnum_iters = 200, tol = 1e-06\n\n    def power_iteration(\n        A: np.ndarray, num_iters: int = 100, tol: float = 1e-6\n    ) -> tuple[float, np.ndarray]:\n        \"\"\"\n        Find dominant eigenvalue and eigenvector using power iteration.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n            num_iters: Maximum number of iterations\n            tol: Convergence tolerance for eigenvalue\n    \n        Returns:\n            (eigenvalue, eigenvector) where:\n            - eigenvalue: Dominant eigenvalue (largest magnitude)\n            - eigenvector: Corresponding eigenvector, normalized to ||v|| = 1\n    \n        Hint: Power iteration algorithm\n        1. Start with random vector v\n        2. Repeat:\n           - v_new = A @ v\n           - v_new = v_new / ||v_new||  (normalize)\n           - eigenvalue = v^T A v  (Rayleigh quotient)\n           - Check convergence: if change in eigenvalue < tol, stop\n        3. Return eigenvalue and eigenvector\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:56: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.004205301404e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestPowerIteration::test_dominant_eigenvalue_found",
+      "lineno": 47,
+      "outcome": "failed",
+      "keywords": [
+        "test_dominant_eigenvalue_found",
+        "TestPowerIteration",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 9.783310815691948e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.001994166988879442,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 56,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 53,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 56,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestPowerIteration object at 0x101afd6d0>\n\n    def test_dominant_eigenvalue_found(self) -> None:\n        np.random.seed(42)\n        true_eigenvalues = np.array([10.0, 3.0, 1.0])\n        V, _ = np.linalg.qr(np.random.randn(3, 3))\n        A = V @ np.diag(true_eigenvalues) @ V.T\n>       eigenvalue, eigenvector = power_iteration(A, num_iters=200)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1.61059193, 1.72090452, 0.97906295],\n       [1.72090452, 5.94600408, 3.36848786],\n       [0.97906295, 3.36848786, 6.44340399]])\nnum_iters = 200, tol = 1e-06\n\n    def power_iteration(\n        A: np.ndarray, num_iters: int = 100, tol: float = 1e-6\n    ) -> tuple[float, np.ndarray]:\n        \"\"\"\n        Find dominant eigenvalue and eigenvector using power iteration.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n            num_iters: Maximum number of iterations\n            tol: Convergence tolerance for eigenvalue\n    \n        Returns:\n            (eigenvalue, eigenvector) where:\n            - eigenvalue: Dominant eigenvalue (largest magnitude)\n            - eigenvector: Corresponding eigenvector, normalized to ||v|| = 1\n    \n        Hint: Power iteration algorithm\n        1. Start with random vector v\n        2. Repeat:\n           - v_new = A @ v\n           - v_new = v_new / ||v_new||  (normalize)\n           - eigenvalue = v^T A v  (Rayleigh quotient)\n           - Check convergence: if change in eigenvalue < tol, stop\n        3. Return eigenvalue and eigenvector\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:56: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.037492468953133e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive::test_2x2_matrix",
+      "lineno": 57,
+      "outcome": "failed",
+      "keywords": [
+        "test_2x2_matrix",
+        "TestDeterminantRecursive",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 5.5416952818632126e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 7.69591424614191e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 77,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 60,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 77,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestDeterminantRecursive object at 0x101afe050>\n\n    def test_2x2_matrix(self) -> None:\n        A = np.array([[3.0, 8.0], [4.0, 6.0]])\n>       result = determinant_recursive(A)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[3., 8.],\n       [4., 6.]])\n\n    def determinant_recursive(A: np.ndarray) -> float:\n        \"\"\"\n        Compute determinant using cofactor expansion (recursive).\n    \n        Args:\n            A: Square matrix of shape (n, n), preferably small (n <= 4)\n    \n        Returns:\n            det(A)\n    \n        Hint: Cofactor expansion along first row\n        - Base case: 1x1 matrix, return A[0,0]\n        - Base case: 2x2 matrix, return A[0,0]*A[1,1] - A[0,1]*A[1,0]\n        - Recursive: det(A) = sum((-1)^j * A[0,j] * det(minor(A, 0, j)))\n          where minor(A, i, j) is A with row i and column j removed\n    \n        Warning: O(n!) complexity, only use for small matrices\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:77: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.783303640782833e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive::test_3x3_matrix",
+      "lineno": 63,
+      "outcome": "failed",
+      "keywords": [
+        "test_3x3_matrix",
+        "TestDeterminantRecursive",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 5.1625072956085205e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 7.783295586705208e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 77,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 66,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 77,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestDeterminantRecursive object at 0x101afe650>\n\n    def test_3x3_matrix(self) -> None:\n        A = np.array([[6.0, 1.0, 1.0], [4.0, -2.0, 5.0], [2.0, 8.0, 7.0]])\n>       result = determinant_recursive(A)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:66: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 6.,  1.,  1.],\n       [ 4., -2.,  5.],\n       [ 2.,  8.,  7.]])\n\n    def determinant_recursive(A: np.ndarray) -> float:\n        \"\"\"\n        Compute determinant using cofactor expansion (recursive).\n    \n        Args:\n            A: Square matrix of shape (n, n), preferably small (n <= 4)\n    \n        Returns:\n            det(A)\n    \n        Hint: Cofactor expansion along first row\n        - Base case: 1x1 matrix, return A[0,0]\n        - Base case: 2x2 matrix, return A[0,0]*A[1,1] - A[0,1]*A[1,0]\n        - Recursive: det(A) = sum((-1)^j * A[0,j] * det(minor(A, 0, j)))\n          where minor(A, i, j) is A with row i and column j removed\n    \n        Warning: O(n!) complexity, only use for small matrices\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:77: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.49579630792141e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive::test_identity_matrix",
+      "lineno": 69,
+      "outcome": "failed",
+      "keywords": [
+        "test_identity_matrix",
+        "TestDeterminantRecursive",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.758312858641148e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00011587492190301418,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 77,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 72,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 77,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestDeterminantRecursive object at 0x101afec50>\n\n    def test_identity_matrix(self) -> None:\n        A = np.eye(3)\n>       result = determinant_recursive(A)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 0., 0.],\n       [0., 1., 0.],\n       [0., 0., 1.]])\n\n    def determinant_recursive(A: np.ndarray) -> float:\n        \"\"\"\n        Compute determinant using cofactor expansion (recursive).\n    \n        Args:\n            A: Square matrix of shape (n, n), preferably small (n <= 4)\n    \n        Returns:\n            det(A)\n    \n        Hint: Cofactor expansion along first row\n        - Base case: 1x1 matrix, return A[0,0]\n        - Base case: 2x2 matrix, return A[0,0]*A[1,1] - A[0,1]*A[1,0]\n        - Recursive: det(A) = sum((-1)^j * A[0,j] * det(minor(A, 0, j)))\n          where minor(A, i, j) is A with row i and column j removed\n    \n        Warning: O(n!) complexity, only use for small matrices\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:77: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.995784446597099e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantRecursive::test_singular_matrix",
+      "lineno": 74,
+      "outcome": "failed",
+      "keywords": [
+        "test_singular_matrix",
+        "TestDeterminantRecursive",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.395888678729534e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00011191586963832378,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 77,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 77,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 77,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestDeterminantRecursive object at 0x101aff290>\n\n    def test_singular_matrix(self) -> None:\n        A = np.array([[1.0, 2.0], [2.0, 4.0]])\n>       result = determinant_recursive(A)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:77: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.],\n       [2., 4.]])\n\n    def determinant_recursive(A: np.ndarray) -> float:\n        \"\"\"\n        Compute determinant using cofactor expansion (recursive).\n    \n        Args:\n            A: Square matrix of shape (n, n), preferably small (n <= 4)\n    \n        Returns:\n            det(A)\n    \n        Hint: Cofactor expansion along first row\n        - Base case: 1x1 matrix, return A[0,0]\n        - Base case: 2x2 matrix, return A[0,0]*A[1,1] - A[0,1]*A[1,0]\n        - Recursive: det(A) = sum((-1)^j * A[0,j] * det(minor(A, 0, j)))\n          where minor(A, i, j) is A with row i and column j removed\n    \n        Warning: O(n!) complexity, only use for small matrices\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:77: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.562502287328243e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU::test_2x2_matrix",
+      "lineno": 81,
+      "outcome": "failed",
+      "keywords": [
+        "test_2x2_matrix",
+        "TestDeterminantLU",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 8.029094897210598e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010591698810458183,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 98,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 84,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 98,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestDeterminantLU object at 0x101affbd0>\n\n    def test_2x2_matrix(self) -> None:\n        A = np.array([[3.0, 8.0], [4.0, 6.0]])\n>       result = determinant_lu(A)\n                 ^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:84: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[3., 8.],\n       [4., 6.]])\n\n    def determinant_lu(A: np.ndarray) -> float:\n        \"\"\"\n        Compute determinant using LU decomposition.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            det(A)\n    \n        Hint:\n        - det(A) = det(L) * det(U)\n        - For triangular matrices, det = product of diagonal elements\n        - L has ones on diagonal, so det(L) = 1\n        - Therefore: det(A) = product of diagonal elements of U\n    \n        Note: You can use your lu_decomposition function or implement directly\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:98: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.866680294275284e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU::test_3x3_matrix",
+      "lineno": 87,
+      "outcome": "failed",
+      "keywords": [
+        "test_3x3_matrix",
+        "TestDeterminantLU",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 4.912493750452995e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 6.88750296831131e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 98,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 90,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 98,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestDeterminantLU object at 0x101b00210>\n\n    def test_3x3_matrix(self) -> None:\n        A = np.array([[6.0, 1.0, 1.0], [4.0, -2.0, 5.0], [2.0, 8.0, 7.0]])\n>       result = determinant_lu(A)\n                 ^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:90: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 6.,  1.,  1.],\n       [ 4., -2.,  5.],\n       [ 2.,  8.,  7.]])\n\n    def determinant_lu(A: np.ndarray) -> float:\n        \"\"\"\n        Compute determinant using LU decomposition.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            det(A)\n    \n        Hint:\n        - det(A) = det(L) * det(U)\n        - For triangular matrices, det = product of diagonal elements\n        - L has ones on diagonal, so det(L) = 1\n        - Therefore: det(A) = product of diagonal elements of U\n    \n        Note: You can use your lu_decomposition function or implement directly\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:98: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.449990905821323e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU::test_larger_matrix",
+      "lineno": 93,
+      "outcome": "failed",
+      "keywords": [
+        "test_larger_matrix",
+        "TestDeterminantLU",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.341701373457909e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.1959023848176e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 98,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 97,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 98,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestDeterminantLU object at 0x101b00850>\n\n    def test_larger_matrix(self) -> None:\n        np.random.seed(42)\n        A = np.random.randn(6, 6)\n>       result = determinant_lu(A)\n                 ^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:97: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 0.49671415, -0.1382643 ,  0.64768854,  1.52302986, -0.23415337,\n        -0.23413696],\n       [ 1.57921282,  0...,\n        -0.29169375],\n       [-0.60170661,  1.85227818, -0.01349722, -1.05771093,  0.82254491,\n        -1.22084365]])\n\n    def determinant_lu(A: np.ndarray) -> float:\n        \"\"\"\n        Compute determinant using LU decomposition.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            det(A)\n    \n        Hint:\n        - det(A) = det(L) * det(U)\n        - For triangular matrices, det = product of diagonal elements\n        - L has ones on diagonal, so det(L) = 1\n        - Therefore: det(A) = product of diagonal elements of U\n    \n        Note: You can use your lu_decomposition function or implement directly\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:98: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.650000043213367e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_decomposition.py::TestDeterminantLU::test_matches_recursive",
+      "lineno": 100,
+      "outcome": "failed",
+      "keywords": [
+        "test_matches_recursive",
+        "TestDeterminantLU",
+        "test_decomposition.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 5.7582976296544075e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 8.145906031131744e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/decomposition.py",
+          "lineno": 77,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_decomposition.py",
+            "lineno": 103,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/decomposition.py",
+            "lineno": 77,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_decomposition.TestDeterminantLU object at 0x101b00e90>\n\n    def test_matches_recursive(self) -> None:\n        A = np.array([[2.0, 3.0, 1.0], [1.0, 4.0, 2.0], [3.0, 1.0, 5.0]])\n>       det_recursive = determinant_recursive(A)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_decomposition.py:103: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[2., 3., 1.],\n       [1., 4., 2.],\n       [3., 1., 5.]])\n\n    def determinant_recursive(A: np.ndarray) -> float:\n        \"\"\"\n        Compute determinant using cofactor expansion (recursive).\n    \n        Args:\n            A: Square matrix of shape (n, n), preferably small (n <= 4)\n    \n        Returns:\n            det(A)\n    \n        Hint: Cofactor expansion along first row\n        - Base case: 1x1 matrix, return A[0,0]\n        - Base case: 2x2 matrix, return A[0,0]*A[1,1] - A[0,1]*A[1,0]\n        - Recursive: det(A) = sum((-1)^j * A[0,j] * det(minor(A, 0, j)))\n          where minor(A, i, j) is A with row i and column j removed\n    \n        Warning: O(n!) complexity, only use for small matrices\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/decomposition.py:77: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 9.458302520215511e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestForwardSubstitution::test_basic_solve",
+      "lineno": 14,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_solve",
+        "TestForwardSubstitution",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.220800034701824e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00012633297592401505,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 22,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 18,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 22,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestForwardSubstitution object at 0x1019d1050>\n\n    def test_basic_solve(self) -> None:\n        L = np.array([[2.0, 0.0, 0.0], [1.0, 3.0, 0.0], [4.0, 1.0, 2.0]])\n        b = np.array([2.0, 5.0, 6.0])\n>       x = forward_substitution(L, b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nL = array([[2., 0., 0.],\n       [1., 3., 0.],\n       [4., 1., 2.]])\nb = array([2., 5., 6.])\n\n    def forward_substitution(L: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Lx = b for lower triangular matrix L.\n    \n        Args:\n            L: Lower triangular matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If L is singular (zero diagonal element)\n    \n        Hint: x[i] = (b[i] - sum(L[i,j]*x[j] for j<i)) / L[i,i]\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:22: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.845911361277103e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestForwardSubstitution::test_identity_matrix",
+      "lineno": 20,
+      "outcome": "failed",
+      "keywords": [
+        "test_identity_matrix",
+        "TestForwardSubstitution",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.77500681579113e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.0001273748930543661,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 22,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 24,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 22,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestForwardSubstitution object at 0x101b4f490>\n\n    def test_identity_matrix(self) -> None:\n        L = np.eye(3)\n        b = np.array([1.0, 2.0, 3.0])\n>       x = forward_substitution(L, b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:24: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nL = array([[1., 0., 0.],\n       [0., 1., 0.],\n       [0., 0., 1.]])\nb = array([1., 2., 3.])\n\n    def forward_substitution(L: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Lx = b for lower triangular matrix L.\n    \n        Args:\n            L: Lower triangular matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If L is singular (zero diagonal element)\n    \n        Hint: x[i] = (b[i] - sum(L[i,j]*x[j] for j<i)) / L[i,i]\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:22: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.929202936589718e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestForwardSubstitution::test_singular_raises",
+      "lineno": 26,
+      "outcome": "failed",
+      "keywords": [
+        "test_singular_raises",
+        "TestForwardSubstitution",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.562502287328243e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00012374995276331902,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 22,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 31,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 22,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestForwardSubstitution object at 0x101b4ec50>\n\n    def test_singular_raises(self) -> None:\n        L = np.array([[1.0, 0.0], [2.0, 0.0]])\n        b = np.array([1.0, 2.0])\n        with pytest.raises(ValueError):\n>           forward_substitution(L, b)\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nL = array([[1., 0.],\n       [2., 0.]]), b = array([1., 2.])\n\n    def forward_substitution(L: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Lx = b for lower triangular matrix L.\n    \n        Args:\n            L: Lower triangular matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If L is singular (zero diagonal element)\n    \n        Hint: x[i] = (b[i] - sum(L[i,j]*x[j] for j<i)) / L[i,i]\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:22: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.841604433953762e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestBackwardSubstitution::test_basic_solve",
+      "lineno": 34,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_solve",
+        "TestBackwardSubstitution",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 5.9499870985746384e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010099983774125576,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 41,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 38,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 41,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestBackwardSubstitution object at 0x101b4f910>\n\n    def test_basic_solve(self) -> None:\n        U = np.array([[2.0, 1.0, 4.0], [0.0, 3.0, 1.0], [0.0, 0.0, 2.0]])\n        b = np.array([10.0, 7.0, 4.0])\n>       x = backward_substitution(U, b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nU = array([[2., 1., 4.],\n       [0., 3., 1.],\n       [0., 0., 2.]])\nb = array([10.,  7.,  4.])\n\n    def backward_substitution(U: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Ux = b for upper triangular matrix U.\n    \n        Args:\n            U: Upper triangular matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If U is singular (zero diagonal element)\n    \n        Hint: Similar to forward substitution but iterate backwards\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:41: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.558295667171478e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestBackwardSubstitution::test_identity_matrix",
+      "lineno": 40,
+      "outcome": "failed",
+      "keywords": [
+        "test_identity_matrix",
+        "TestBackwardSubstitution",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.316702976822853e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00011066696606576443,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 41,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 44,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 41,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestBackwardSubstitution object at 0x101b4ffd0>\n\n    def test_identity_matrix(self) -> None:\n        U = np.eye(3)\n        b = np.array([1.0, 2.0, 3.0])\n>       x = backward_substitution(U, b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nU = array([[1., 0., 0.],\n       [0., 1., 0.],\n       [0., 0., 1.]])\nb = array([1., 2., 3.])\n\n    def backward_substitution(U: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Ux = b for upper triangular matrix U.\n    \n        Args:\n            U: Upper triangular matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If U is singular (zero diagonal element)\n    \n        Hint: Similar to forward substitution but iterate backwards\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:41: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.766694761812687e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination::test_basic_solve",
+      "lineno": 48,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_solve",
+        "TestGaussianElimination",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.704086601734161e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 7.524993270635605e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 64,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 52,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 64,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestGaussianElimination object at 0x101b4cb10>\n\n    def test_basic_solve(self) -> None:\n        A = np.array([[3.0, 2.0, -1.0], [2.0, -2.0, 4.0], [-1.0, 0.5, -1.0]])\n        b = np.array([1.0, -2.0, 0.0])\n>       x = gaussian_elimination(A, b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:52: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 3. ,  2. , -1. ],\n       [ 2. , -2. ,  4. ],\n       [-1. ,  0.5, -1. ]])\nb = array([ 1., -2.,  0.])\n\n    def gaussian_elimination(A: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Ax = b using Gaussian elimination with partial pivoting.\n    \n        Args:\n            A: Coefficient matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If system is singular (no unique solution)\n    \n        Hint:\n        1. Create augmented matrix [A | b]\n        2. Forward elimination with partial pivoting (swap rows to get largest pivot)\n        3. Backward substitution to solve\n        4. Check for zero pivots (singular system)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:64: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.879190914332867e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination::test_identity_system",
+      "lineno": 54,
+      "outcome": "failed",
+      "keywords": [
+        "test_identity_system",
+        "TestGaussianElimination",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 8.433382026851177e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010904204100370407,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 64,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 58,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 64,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestGaussianElimination object at 0x101b4d290>\n\n    def test_identity_system(self) -> None:\n        A = np.eye(4)\n        b = np.array([1.0, 2.0, 3.0, 4.0])\n>       x = gaussian_elimination(A, b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:58: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 0., 0., 0.],\n       [0., 1., 0., 0.],\n       [0., 0., 1., 0.],\n       [0., 0., 0., 1.]])\nb = array([1., 2., 3., 4.])\n\n    def gaussian_elimination(A: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Ax = b using Gaussian elimination with partial pivoting.\n    \n        Args:\n            A: Coefficient matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If system is singular (no unique solution)\n    \n        Hint:\n        1. Create augmented matrix [A | b]\n        2. Forward elimination with partial pivoting (swap rows to get largest pivot)\n        3. Backward substitution to solve\n        4. Check for zero pivots (singular system)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:64: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.229181937873363e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination::test_larger_system",
+      "lineno": 60,
+      "outcome": "failed",
+      "keywords": [
+        "test_larger_system",
+        "TestGaussianElimination",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.850001566112041e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010487507097423077,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 64,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 67,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 64,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestGaussianElimination object at 0x101b4d690>\n\n    def test_larger_system(self) -> None:\n        np.random.seed(42)\n        n = 10\n        A = np.random.randn(n, n)\n        x_true = np.random.randn(n)\n        b = A @ x_true\n>       x = gaussian_elimination(A, b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 0.49671415, -0.1382643 ,  0.64768854,  1.52302986, -0.23415337,\n        -0.23413696,  1.57921282,  0.76743473...4499, -0.70205309, -0.32766215, -0.39210815,\n        -1.46351495,  0.29612028,  0.26105527,  0.00511346, -0.23458713]])\nb = array([ 0.80578474,  0.37063511, -2.96532357, -0.00514846, -1.35302556,\n       -1.96967006,  2.69262949, -1.36327241,  1.60702381,  0.05342332])\n\n    def gaussian_elimination(A: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Ax = b using Gaussian elimination with partial pivoting.\n    \n        Args:\n            A: Coefficient matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If system is singular (no unique solution)\n    \n        Hint:\n        1. Create augmented matrix [A | b]\n        2. Forward elimination with partial pivoting (swap rows to get largest pivot)\n        3. Backward substitution to solve\n        4. Check for zero pivots (singular system)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:64: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.641610525548458e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestGaussianElimination::test_singular_raises",
+      "lineno": 69,
+      "outcome": "failed",
+      "keywords": [
+        "test_singular_raises",
+        "TestGaussianElimination",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.408298552036285e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00012145796790719032,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 64,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 74,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 64,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestGaussianElimination object at 0x101b4e2d0>\n\n    def test_singular_raises(self) -> None:\n        A = np.array([[1.0, 2.0], [2.0, 4.0]])\n        b = np.array([1.0, 2.0])\n        with pytest.raises(ValueError):\n>           gaussian_elimination(A, b)\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.],\n       [2., 4.]]), b = array([1., 2.])\n\n    def gaussian_elimination(A: np.ndarray, b: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Solve Ax = b using Gaussian elimination with partial pivoting.\n    \n        Args:\n            A: Coefficient matrix of shape (n, n)\n            b: Right-hand side vector of shape (n,)\n    \n        Returns:\n            Solution vector x of shape (n,)\n    \n        Raises:\n            ValueError: If system is singular (no unique solution)\n    \n        Hint:\n        1. Create augmented matrix [A | b]\n        2. Forward elimination with partial pivoting (swap rows to get largest pivot)\n        3. Backward substitution to solve\n        4. Check for zero pivots (singular system)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:64: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.320808410644531e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition::test_basic_decomposition",
+      "lineno": 77,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_decomposition",
+        "TestLUDecomposition",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.158417090773582e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010433304123580456,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 80,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestLUDecomposition object at 0x101b4c450>\n\n    def test_basic_decomposition(self) -> None:\n        A = np.array([[4.0, 3.0], [6.0, 3.0]])\n>       L, U = lu_decomposition(A)\n               ^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:80: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[4., 3.],\n       [6., 3.]])\n\n    def lu_decomposition(A: np.ndarray) -> tuple[np.ndarray, np.ndarray]:\n        \"\"\"\n        Decompose A = LU using Doolittle algorithm.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            (L, U) where:\n            - L is lower triangular with ones on diagonal, shape (n, n)\n            - U is upper triangular, shape (n, n)\n    \n        Raises:\n            ValueError: If decomposition fails (matrix is singular)\n    \n        Hint: Doolittle algorithm\n        - L has ones on diagonal\n        - For each column k:\n          - Compute U[k, k:] (upper part)\n          - Compute L[k+1:, k] (lower part)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.345791578292847e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition::test_3x3_decomposition",
+      "lineno": 83,
+      "outcome": "failed",
+      "keywords": [
+        "test_3x3_decomposition",
+        "TestLUDecomposition",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 4.704180173575878e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 6.608385592699051e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 86,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestLUDecomposition object at 0x101b4c6d0>\n\n    def test_3x3_decomposition(self) -> None:\n        A = np.array([[2.0, -1.0, -2.0], [-4.0, 6.0, 3.0], [-4.0, -2.0, 8.0]])\n>       L, U = lu_decomposition(A)\n               ^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:86: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 2., -1., -2.],\n       [-4.,  6.,  3.],\n       [-4., -2.,  8.]])\n\n    def lu_decomposition(A: np.ndarray) -> tuple[np.ndarray, np.ndarray]:\n        \"\"\"\n        Decompose A = LU using Doolittle algorithm.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            (L, U) where:\n            - L is lower triangular with ones on diagonal, shape (n, n)\n            - U is upper triangular, shape (n, n)\n    \n        Raises:\n            ValueError: If decomposition fails (matrix is singular)\n    \n        Hint: Doolittle algorithm\n        - L has ones on diagonal\n        - For each column k:\n          - Compute U[k, k:] (upper part)\n          - Compute L[k+1:, k] (lower part)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.429082714021206e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition::test_identity_matrix",
+      "lineno": 92,
+      "outcome": "failed",
+      "keywords": [
+        "test_identity_matrix",
+        "TestLUDecomposition",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 4.716706462204456e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 7.504201494157314e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 95,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestLUDecomposition object at 0x101afeb50>\n\n    def test_identity_matrix(self) -> None:\n        A = np.eye(3)\n>       L, U = lu_decomposition(A)\n               ^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:95: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 0., 0.],\n       [0., 1., 0.],\n       [0., 0., 1.]])\n\n    def lu_decomposition(A: np.ndarray) -> tuple[np.ndarray, np.ndarray]:\n        \"\"\"\n        Decompose A = LU using Doolittle algorithm.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            (L, U) where:\n            - L is lower triangular with ones on diagonal, shape (n, n)\n            - U is upper triangular, shape (n, n)\n    \n        Raises:\n            ValueError: If decomposition fails (matrix is singular)\n    \n        Hint: Doolittle algorithm\n        - L has ones on diagonal\n        - For each column k:\n          - Compute U[k, k:] (upper part)\n          - Compute L[k+1:, k] (lower part)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.329205982387066e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_linear_systems.py::TestLUDecomposition::test_random_matrix",
+      "lineno": 98,
+      "outcome": "failed",
+      "keywords": [
+        "test_random_matrix",
+        "TestLUDecomposition",
+        "test_linear_systems.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.120791658759117e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010779197327792645,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/linear_systems.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_linear_systems.py",
+            "lineno": 102,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/linear_systems.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_linear_systems.TestLUDecomposition object at 0x101afe310>\n\n    def test_random_matrix(self) -> None:\n        np.random.seed(42)\n        A = np.random.randn(5, 5)\n>       L, U = lu_decomposition(A)\n               ^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_linear_systems.py:102: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 0.49671415, -0.1382643 ,  0.64768854,  1.52302986, -0.23415337],\n       [-0.23413696,  1.57921282,  0.7674347...112,  0.31424733, -0.90802408, -1.4123037 ],\n       [ 1.46564877, -0.2257763 ,  0.0675282 , -1.42474819, -0.54438272]])\n\n    def lu_decomposition(A: np.ndarray) -> tuple[np.ndarray, np.ndarray]:\n        \"\"\"\n        Decompose A = LU using Doolittle algorithm.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            (L, U) where:\n            - L is lower triangular with ones on diagonal, shape (n, n)\n            - U is upper triangular, shape (n, n)\n    \n        Raises:\n            ValueError: If decomposition fails (matrix is singular)\n    \n        Hint: Doolittle algorithm\n        - L has ones on diagonal\n        - For each column k:\n          - Compute U[k, k:] (upper part)\n          - Compute L[k+1:, k] (lower part)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/linear_systems.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.345814861357212e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive::test_basic_multiply",
+      "lineno": 15,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_multiply",
+        "TestMatrixMultiplyNaive",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.441702134907246e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010445783846080303,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 22,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 19,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 22,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixMultiplyNaive object at 0x101613910>\n\n    def test_basic_multiply(self) -> None:\n        A = np.array([[1.0, 2.0], [3.0, 4.0]])\n        B = np.array([[5.0, 6.0], [7.0, 8.0]])\n>       result = matrix_multiply_naive(A, B)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.],\n       [3., 4.]]), B = array([[5., 6.],\n       [7., 8.]])\n\n    def matrix_multiply_naive(A: np.ndarray, B: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Multiply two matrices using explicit triple loop (naive O(n^3) algorithm).\n    \n        Args:\n            A: Matrix of shape (m, k)\n            B: Matrix of shape (k, n)\n    \n        Returns:\n            Product AB of shape (m, n)\n    \n        Raises:\n            ValueError: If dimensions incompatible (A columns != B rows)\n    \n        Hint: Use three nested loops: for i, for j, for k\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:22: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.837490946054459e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive::test_identity_multiply",
+      "lineno": 22,
+      "outcome": "failed",
+      "keywords": [
+        "test_identity_multiply",
+        "TestMatrixMultiplyNaive",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.474996916949749e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.504216723144054e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 22,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 26,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 22,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixMultiplyNaive object at 0x1016f8910>\n\n    def test_identity_multiply(self) -> None:\n        A = np.array([[1.0, 2.0], [3.0, 4.0]])\n        I = np.eye(2)\n>       result = matrix_multiply_naive(A, I)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.],\n       [3., 4.]]), B = array([[1., 0.],\n       [0., 1.]])\n\n    def matrix_multiply_naive(A: np.ndarray, B: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Multiply two matrices using explicit triple loop (naive O(n^3) algorithm).\n    \n        Args:\n            A: Matrix of shape (m, k)\n            B: Matrix of shape (k, n)\n    \n        Returns:\n            Product AB of shape (m, n)\n    \n        Raises:\n            ValueError: If dimensions incompatible (A columns != B rows)\n    \n        Hint: Use three nested loops: for i, for j, for k\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:22: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.349997758865356e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive::test_non_square_multiply",
+      "lineno": 28,
+      "outcome": "failed",
+      "keywords": [
+        "test_non_square_multiply",
+        "TestMatrixMultiplyNaive",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.079099304974079e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.53341368585825e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 22,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 32,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 22,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixMultiplyNaive object at 0x101893950>\n\n    def test_non_square_multiply(self) -> None:\n        A = np.array([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])\n        B = np.array([[7.0, 8.0], [9.0, 10.0], [11.0, 12.0]])\n>       result = matrix_multiply_naive(A, B)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2., 3.],\n       [4., 5., 6.]])\nB = array([[ 7.,  8.],\n       [ 9., 10.],\n       [11., 12.]])\n\n    def matrix_multiply_naive(A: np.ndarray, B: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Multiply two matrices using explicit triple loop (naive O(n^3) algorithm).\n    \n        Args:\n            A: Matrix of shape (m, k)\n            B: Matrix of shape (k, n)\n    \n        Returns:\n            Product AB of shape (m, n)\n    \n        Raises:\n            ValueError: If dimensions incompatible (A columns != B rows)\n    \n        Hint: Use three nested loops: for i, for j, for k\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:22: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.479094736278057e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyNaive::test_dimension_mismatch",
+      "lineno": 35,
+      "outcome": "failed",
+      "keywords": [
+        "test_dimension_mismatch",
+        "TestMatrixMultiplyNaive",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 5.2958959713578224e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.374995715916157e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 22,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 40,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 22,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixMultiplyNaive object at 0x101a69450>\n\n    def test_dimension_mismatch(self) -> None:\n        A = np.array([[1.0, 2.0]])\n        B = np.array([[1.0], [2.0], [3.0]])\n        with pytest.raises(ValueError):\n>           matrix_multiply_naive(A, B)\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.]]), B = array([[1.],\n       [2.],\n       [3.]])\n\n    def matrix_multiply_naive(A: np.ndarray, B: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Multiply two matrices using explicit triple loop (naive O(n^3) algorithm).\n    \n        Args:\n            A: Matrix of shape (m, k)\n            B: Matrix of shape (k, n)\n    \n        Returns:\n            Product AB of shape (m, n)\n    \n        Raises:\n            ValueError: If dimensions incompatible (A columns != B rows)\n    \n        Hint: Use three nested loops: for i, for j, for k\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:22: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.308297790586948e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyVectorized::test_basic_multiply",
+      "lineno": 43,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_multiply",
+        "TestMatrixMultiplyVectorized",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.741704419255257e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.0001291248481720686,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 41,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 47,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 41,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixMultiplyVectorized object at 0x101a6aed0>\n\n    def test_basic_multiply(self) -> None:\n        A = np.array([[1.0, 2.0], [3.0, 4.0]])\n        B = np.array([[5.0, 6.0], [7.0, 8.0]])\n>       result = matrix_multiply_vectorized(A, B)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:47: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.],\n       [3., 4.]]), B = array([[5., 6.],\n       [7., 8.]])\n\n    def matrix_multiply_vectorized(A: np.ndarray, B: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Multiply two matrices using NumPy vectorization.\n    \n        Args:\n            A: Matrix of shape (m, k)\n            B: Matrix of shape (k, n)\n    \n        Returns:\n            Product AB of shape (m, n)\n    \n        Raises:\n            ValueError: If dimensions incompatible\n    \n        Hint: Use np.dot or @ operator, or broadcasting with np.sum\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:41: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.924988701939583e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixMultiplyVectorized::test_matches_naive",
+      "lineno": 50,
+      "outcome": "failed",
+      "keywords": [
+        "test_matches_naive",
+        "TestMatrixMultiplyVectorized",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 8.050003089010715e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00012366683222353458,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 22,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 55,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 22,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixMultiplyVectorized object at 0x101a6bc90>\n\n    def test_matches_naive(self) -> None:\n        np.random.seed(42)\n        A = np.random.randn(10, 15)\n        B = np.random.randn(15, 8)\n>       naive_result = matrix_multiply_naive(A, B)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:55: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 0.49671415, -0.1382643 ,  0.64768854,  1.52302986, -0.23415337,\n        -0.23413696,  1.57921282,  0.76743473...4275, -1.60748323,  0.18463386,  0.25988279,\n         0.78182287, -1.23695071, -1.32045661,  0.52194157,  0.29698467]])\nB = array([[ 0.25049285,  0.34644821, -0.68002472,  0.2322537 ,  0.29307247,\n        -0.71435142,  1.86577451,  0.47383292...     [-3.24126734, -1.02438764, -0.25256815, -1.24778318,  1.6324113 ,\n        -1.43014138, -0.44004449,  0.13074058]])\n\n    def matrix_multiply_naive(A: np.ndarray, B: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Multiply two matrices using explicit triple loop (naive O(n^3) algorithm).\n    \n        Args:\n            A: Matrix of shape (m, k)\n            B: Matrix of shape (k, n)\n    \n        Returns:\n            Product AB of shape (m, n)\n    \n        Raises:\n            ValueError: If dimensions incompatible (A columns != B rows)\n    \n        Hint: Use three nested loops: for i, for j, for k\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:22: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.616705261170864e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTranspose::test_basic_transpose",
+      "lineno": 60,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_transpose",
+        "TestMatrixTranspose",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.995792500674725e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00011466606520116329,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 54,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 63,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 54,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixTranspose object at 0x101a68c50>\n\n    def test_basic_transpose(self) -> None:\n        A = np.array([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])\n>       result = matrix_transpose(A)\n                 ^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2., 3.],\n       [4., 5., 6.]])\n\n    def matrix_transpose(A: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Transpose a matrix.\n    \n        Args:\n            A: Matrix of shape (m, n)\n    \n        Returns:\n            Transpose A^T of shape (n, m)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:54: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.187497638165951e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTranspose::test_square_matrix",
+      "lineno": 66,
+      "outcome": "failed",
+      "keywords": [
+        "test_square_matrix",
+        "TestMatrixTranspose",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 8.00001434981823e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010154210031032562,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 54,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 69,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 54,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixTranspose object at 0x101a69610>\n\n    def test_square_matrix(self) -> None:\n        A = np.array([[1.0, 2.0], [3.0, 4.0]])\n>       result = matrix_transpose(A)\n                 ^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:69: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.],\n       [3., 4.]])\n\n    def matrix_transpose(A: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Transpose a matrix.\n    \n        Args:\n            A: Matrix of shape (m, n)\n    \n        Returns:\n            Transpose A^T of shape (n, m)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:54: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.379210390150547e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTranspose::test_double_transpose",
+      "lineno": 72,
+      "outcome": "failed",
+      "keywords": [
+        "test_double_transpose",
+        "TestMatrixTranspose",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 8.295802399516106e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00011116685345768929,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 54,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 75,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 54,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixTranspose object at 0x101a6a050>\n\n    def test_double_transpose(self) -> None:\n        A = np.random.randn(5, 7)\n>       result = matrix_transpose(matrix_transpose(A))\n                                  ^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:75: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[ 1.44127329, -1.43586215,  1.16316375,  0.01023306, -0.98150865,\n         0.46210347,  0.1990597 ],\n       [-0...30729952],\n       [ 0.81286212,  0.62962884, -0.82899501, -0.56018104,  0.74729361,\n         0.61037027, -0.02090159]])\n\n    def matrix_transpose(A: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Transpose a matrix.\n    \n        Args:\n            A: Matrix of shape (m, n)\n    \n        Returns:\n            Transpose A^T of shape (n, m)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:54: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.900005973875523e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTrace::test_basic_trace",
+      "lineno": 79,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_trace",
+        "TestMatrixTrace",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.28340058028698e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010041682980954647,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 70,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 82,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 70,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixTrace object at 0x101a6abd0>\n\n    def test_basic_trace(self) -> None:\n        A = np.array([[1.0, 2.0], [3.0, 4.0]])\n>       result = matrix_trace(A)\n                 ^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:82: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.],\n       [3., 4.]])\n\n    def matrix_trace(A: np.ndarray) -> float:\n        \"\"\"\n        Compute trace of a square matrix.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            Trace tr(A) = sum of diagonal elements\n    \n        Raises:\n            ValueError: If matrix is not square\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:70: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 9.341700933873653e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTrace::test_identity_matrix",
+      "lineno": 84,
+      "outcome": "failed",
+      "keywords": [
+        "test_identity_matrix",
+        "TestMatrixTrace",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 5.283299833536148e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 7.441709749400616e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 70,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 87,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 70,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixTrace object at 0x101a6acd0>\n\n    def test_identity_matrix(self) -> None:\n        I = np.eye(5)\n>       result = matrix_trace(I)\n                 ^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:87: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 0., 0., 0., 0.],\n       [0., 1., 0., 0., 0.],\n       [0., 0., 1., 0., 0.],\n       [0., 0., 0., 1., 0.],\n       [0., 0., 0., 0., 1.]])\n\n    def matrix_trace(A: np.ndarray) -> float:\n        \"\"\"\n        Compute trace of a square matrix.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            Trace tr(A) = sum of diagonal elements\n    \n        Raises:\n            ValueError: If matrix is not square\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:70: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.904189310967922e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestMatrixTrace::test_non_square_raises",
+      "lineno": 89,
+      "outcome": "failed",
+      "keywords": [
+        "test_non_square_raises",
+        "TestMatrixTrace",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.162491627037525e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 8.13750084489584e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 70,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 93,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 70,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestMatrixTrace object at 0x101a68810>\n\n    def test_non_square_raises(self) -> None:\n        A = np.array([[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]])\n        with pytest.raises(ValueError):\n>           matrix_trace(A)\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:93: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2., 3.],\n       [4., 5., 6.]])\n\n    def matrix_trace(A: np.ndarray) -> float:\n        \"\"\"\n        Compute trace of a square matrix.\n    \n        Args:\n            A: Square matrix of shape (n, n)\n    \n        Returns:\n            Trace tr(A) = sum of diagonal elements\n    \n        Raises:\n            ValueError: If matrix is not square\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:70: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 9.379209950566292e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestFrobeniusNorm::test_basic_norm",
+      "lineno": 96,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_norm",
+        "TestFrobeniusNorm",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.862496957182884e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.0001094168983399868,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 85,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 99,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 85,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestFrobeniusNorm object at 0x101ac81d0>\n\n    def test_basic_norm(self) -> None:\n        A = np.array([[1.0, 2.0], [3.0, 4.0]])\n>       result = frobenius_norm(A)\n                 ^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:99: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 2.],\n       [3., 4.]])\n\n    def frobenius_norm(A: np.ndarray) -> float:\n        \"\"\"\n        Compute Frobenius norm of a matrix.\n    \n        Args:\n            A: Matrix of shape (m, n)\n    \n        Returns:\n            ||A||_F = sqrt(sum(A_ij^2))\n    \n        Hint: Flatten the matrix or use element-wise operations\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:85: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.454189471900463e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestFrobeniusNorm::test_identity_matrix",
+      "lineno": 102,
+      "outcome": "failed",
+      "keywords": [
+        "test_identity_matrix",
+        "TestFrobeniusNorm",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 8.591706864535809e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010420801118016243,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 85,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 105,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 85,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestFrobeniusNorm object at 0x101ac8ad0>\n\n    def test_identity_matrix(self) -> None:\n        I = np.eye(3)\n>       result = frobenius_norm(I)\n                 ^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:105: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[1., 0., 0.],\n       [0., 1., 0.],\n       [0., 0., 1.]])\n\n    def frobenius_norm(A: np.ndarray) -> float:\n        \"\"\"\n        Compute Frobenius norm of a matrix.\n    \n        Args:\n            A: Matrix of shape (m, n)\n    \n        Returns:\n            ||A||_F = sqrt(sum(A_ij^2))\n    \n        Hint: Flatten the matrix or use element-wise operations\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:85: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.329089567065239e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_matrix_ops.py::TestFrobeniusNorm::test_zero_matrix",
+      "lineno": 108,
+      "outcome": "failed",
+      "keywords": [
+        "test_zero_matrix",
+        "TestFrobeniusNorm",
+        "test_matrix_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.454205140471458e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 8.649984374642372e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/matrix_ops.py",
+          "lineno": 85,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_matrix_ops.py",
+            "lineno": 111,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/matrix_ops.py",
+            "lineno": 85,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_matrix_ops.TestFrobeniusNorm object at 0x101ac8190>\n\n    def test_zero_matrix(self) -> None:\n        A = np.zeros((4, 5))\n>       result = frobenius_norm(A)\n                 ^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_matrix_ops.py:111: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nA = array([[0., 0., 0., 0., 0.],\n       [0., 0., 0., 0., 0.],\n       [0., 0., 0., 0., 0.],\n       [0., 0., 0., 0., 0.]])\n\n    def frobenius_norm(A: np.ndarray) -> float:\n        \"\"\"\n        Compute Frobenius norm of a matrix.\n    \n        Args:\n            A: Matrix of shape (m, n)\n    \n        Returns:\n            ||A||_F = sqrt(sum(A_ij^2))\n    \n        Hint: Flatten the matrix or use element-wise operations\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/matrix_ops.py:85: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.324991747736931e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorAdd::test_basic_addition",
+      "lineno": 15,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_addition",
+        "TestVectorAdd",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.404200732707977e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.96661838144064e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 20,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 19,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 20,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorAdd object at 0x1018fff10>\n\n    def test_basic_addition(self) -> None:\n        v = np.array([1.0, 2.0, 3.0])\n        w = np.array([4.0, 5.0, 6.0])\n>       result = vector_add(v, w)\n                 ^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2., 3.]), w = array([4., 5., 6.])\n\n    def vector_add(v: np.ndarray, w: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Add two vectors element-wise.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            Sum v + w of shape (n,)\n    \n        Raises:\n            ValueError: If dimensions don't match\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:20: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.408306606113911e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorAdd::test_dimension_mismatch",
+      "lineno": 22,
+      "outcome": "failed",
+      "keywords": [
+        "test_dimension_mismatch",
+        "TestVectorAdd",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 0.00011349981650710106,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.225006215274334e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 20,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 27,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 20,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorAdd object at 0x101b03990>\n\n    def test_dimension_mismatch(self) -> None:\n        v = np.array([1.0, 2.0])\n        w = np.array([1.0, 2.0, 3.0])\n        with pytest.raises(ValueError):\n>           vector_add(v, w)\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2.]), w = array([1., 2., 3.])\n\n    def vector_add(v: np.ndarray, w: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Add two vectors element-wise.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            Sum v + w of shape (n,)\n    \n        Raises:\n            ValueError: If dimensions don't match\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:20: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 9.508314542472363e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorAdd::test_zero_vector",
+      "lineno": 28,
+      "outcome": "failed",
+      "keywords": [
+        "test_zero_vector",
+        "TestVectorAdd",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 9.787501767277718e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010704109445214272,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 20,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 32,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 20,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorAdd object at 0x101b01610>\n\n    def test_zero_vector(self) -> None:\n        v = np.array([1.0, 2.0, 3.0])\n        w = np.zeros(3)\n>       result = vector_add(v, w)\n                 ^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:32: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2., 3.]), w = array([0., 0., 0.])\n\n    def vector_add(v: np.ndarray, w: np.ndarray) -> np.ndarray:\n        \"\"\"\n        Add two vectors element-wise.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            Sum v + w of shape (n,)\n    \n        Raises:\n            ValueError: If dimensions don't match\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:20: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.112494833767414e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorScalarMultiply::test_basic_multiply",
+      "lineno": 36,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_multiply",
+        "TestVectorScalarMultiply",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.612514309585094e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.549991227686405e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 34,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 39,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 34,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorScalarMultiply object at 0x101b019d0>\n\n    def test_basic_multiply(self) -> None:\n        v = np.array([1.0, 2.0, 3.0])\n>       result = vector_scalar_multiply(v, 2.0)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2., 3.]), c = 2.0\n\n    def vector_scalar_multiply(v: np.ndarray, c: float) -> np.ndarray:\n        \"\"\"\n        Multiply vector by scalar.\n    \n        Args:\n            v: Vector of shape (n,)\n            c: Scalar value\n    \n        Returns:\n            Scaled vector c * v of shape (n,)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:34: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 0.0001076660118997097,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorScalarMultiply::test_zero_scalar",
+      "lineno": 42,
+      "outcome": "failed",
+      "keywords": [
+        "test_zero_scalar",
+        "TestVectorScalarMultiply",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 5.791615694761276e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 8.466606959700584e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 34,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 45,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 34,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorScalarMultiply object at 0x101b014d0>\n\n    def test_zero_scalar(self) -> None:\n        v = np.array([1.0, 2.0, 3.0])\n>       result = vector_scalar_multiply(v, 0.0)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2., 3.]), c = 0.0\n\n    def vector_scalar_multiply(v: np.ndarray, c: float) -> np.ndarray:\n        \"\"\"\n        Multiply vector by scalar.\n    \n        Args:\n            v: Vector of shape (n,)\n            c: Scalar value\n    \n        Returns:\n            Scaled vector c * v of shape (n,)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:34: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.166690193116665e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorScalarMultiply::test_negative_scalar",
+      "lineno": 47,
+      "outcome": "failed",
+      "keywords": [
+        "test_negative_scalar",
+        "TestVectorScalarMultiply",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 8.729100227355957e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010062498040497303,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 34,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 50,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 34,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorScalarMultiply object at 0x101b00450>\n\n    def test_negative_scalar(self) -> None:\n        v = np.array([1.0, -2.0, 3.0])\n>       result = vector_scalar_multiply(v, -1.0)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:50: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([ 1., -2.,  3.]), c = -1.0\n\n    def vector_scalar_multiply(v: np.ndarray, c: float) -> np.ndarray:\n        \"\"\"\n        Multiply vector by scalar.\n    \n        Args:\n            v: Vector of shape (n,)\n            c: Scalar value\n    \n        Returns:\n            Scaled vector c * v of shape (n,)\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:34: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.475012145936489e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestDotProduct::test_basic_dot_product",
+      "lineno": 55,
+      "outcome": "failed",
+      "keywords": [
+        "test_basic_dot_product",
+        "TestDotProduct",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.279093213379383e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.0001093749888241291,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 53,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 59,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 53,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestDotProduct object at 0x101b02410>\n\n    def test_basic_dot_product(self) -> None:\n        v = np.array([1.0, 2.0, 3.0])\n        w = np.array([4.0, 5.0, 6.0])\n>       result = dot_product(v, w)\n                 ^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:59: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2., 3.]), w = array([4., 5., 6.])\n\n    def dot_product(v: np.ndarray, w: np.ndarray) -> float:\n        \"\"\"\n        Compute dot product of two vectors.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            Dot product v \u00b7 w (scalar)\n    \n        Raises:\n            ValueError: If dimensions don't match\n    \n        Hint: Use NumPy operations, no explicit loops\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:53: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.675014108419418e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestDotProduct::test_orthogonal_vectors",
+      "lineno": 62,
+      "outcome": "failed",
+      "keywords": [
+        "test_orthogonal_vectors",
+        "TestDotProduct",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 4.766695201396942e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 6.512505933642387e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 53,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 66,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 53,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestDotProduct object at 0x101b00110>\n\n    def test_orthogonal_vectors(self) -> None:\n        v = np.array([1.0, 0.0])\n        w = np.array([0.0, 1.0])\n>       result = dot_product(v, w)\n                 ^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:66: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 0.]), w = array([0., 1.])\n\n    def dot_product(v: np.ndarray, w: np.ndarray) -> float:\n        \"\"\"\n        Compute dot product of two vectors.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            Dot product v \u00b7 w (scalar)\n    \n        Raises:\n            ValueError: If dimensions don't match\n    \n        Hint: Use NumPy operations, no explicit loops\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:53: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.94590450823307e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestDotProduct::test_dimension_mismatch",
+      "lineno": 68,
+      "outcome": "failed",
+      "keywords": [
+        "test_dimension_mismatch",
+        "TestDotProduct",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 0.00010375003330409527,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00011283298954367638,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 53,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 73,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 53,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestDotProduct object at 0x101b00650>\n\n    def test_dimension_mismatch(self) -> None:\n        v = np.array([1.0, 2.0])\n        w = np.array([1.0, 2.0, 3.0])\n        with pytest.raises(ValueError):\n>           dot_product(v, w)\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2.]), w = array([1., 2., 3.])\n\n    def dot_product(v: np.ndarray, w: np.ndarray) -> float:\n        \"\"\"\n        Compute dot product of two vectors.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            Dot product v \u00b7 w (scalar)\n    \n        Raises:\n            ValueError: If dimensions don't match\n    \n        Hint: Use NumPy operations, no explicit loops\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:53: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.204106077551842e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm::test_l2_norm",
+      "lineno": 76,
+      "outcome": "failed",
+      "keywords": [
+        "test_l2_norm",
+        "TestVectorNorm",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.566693238914013e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 8.745910599827766e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 70,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 79,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 70,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorNorm object at 0x101775790>\n\n    def test_l2_norm(self) -> None:\n        v = np.array([3.0, 4.0])\n>       result = vector_norm(v, p=2.0)\n                 ^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:79: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([3., 4.]), p = 2.0\n\n    def vector_norm(v: np.ndarray, p: float = 2.0) -> float:\n        \"\"\"\n        Compute Lp norm of a vector.\n    \n        Args:\n            v: Vector of shape (n,)\n            p: Norm order (1 for Manhattan, 2 for Euclidean, np.inf for max)\n    \n        Returns:\n            ||v||_p = (sum(|v_i|^p))^(1/p)\n            For p=inf, returns max(|v_i|)\n    \n        Hint: Handle p=np.inf as special case\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:70: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 7.449998520314693e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm::test_l1_norm",
+      "lineno": 81,
+      "outcome": "failed",
+      "keywords": [
+        "test_l1_norm",
+        "TestVectorNorm",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 8.158315904438496e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 9.474996477365494e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 70,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 84,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 70,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorNorm object at 0x101a959d0>\n\n    def test_l1_norm(self) -> None:\n        v = np.array([3.0, -4.0])\n>       result = vector_norm(v, p=1.0)\n                 ^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:84: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([ 3., -4.]), p = 1.0\n\n    def vector_norm(v: np.ndarray, p: float = 2.0) -> float:\n        \"\"\"\n        Compute Lp norm of a vector.\n    \n        Args:\n            v: Vector of shape (n,)\n            p: Norm order (1 for Manhattan, 2 for Euclidean, np.inf for max)\n    \n        Returns:\n            ||v||_p = (sum(|v_i|^p))^(1/p)\n            For p=inf, returns max(|v_i|)\n    \n        Hint: Handle p=np.inf as special case\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:70: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.445893086493015e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm::test_inf_norm",
+      "lineno": 86,
+      "outcome": "failed",
+      "keywords": [
+        "test_inf_norm",
+        "TestVectorNorm",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.970809772610664e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 8.791685104370117e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 70,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 89,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 70,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorNorm object at 0x101a94590>\n\n    def test_inf_norm(self) -> None:\n        v = np.array([3.0, -7.0, 2.0])\n>       result = vector_norm(v, p=np.inf)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:89: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([ 3., -7.,  2.]), p = inf\n\n    def vector_norm(v: np.ndarray, p: float = 2.0) -> float:\n        \"\"\"\n        Compute Lp norm of a vector.\n    \n        Args:\n            v: Vector of shape (n,)\n            p: Norm order (1 for Manhattan, 2 for Euclidean, np.inf for max)\n    \n        Returns:\n            ||v||_p = (sum(|v_i|^p))^(1/p)\n            For p=inf, returns max(|v_i|)\n    \n        Hint: Handle p=np.inf as special case\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:70: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.699981167912483e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestVectorNorm::test_zero_vector",
+      "lineno": 91,
+      "outcome": "failed",
+      "keywords": [
+        "test_zero_vector",
+        "TestVectorNorm",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.320800796151161e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010529090650379658,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 70,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 94,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 70,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestVectorNorm object at 0x101a95110>\n\n    def test_zero_vector(self) -> None:\n        v = np.zeros(5)\n>       result = vector_norm(v)\n                 ^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:94: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([0., 0., 0., 0., 0.]), p = 2.0\n\n    def vector_norm(v: np.ndarray, p: float = 2.0) -> float:\n        \"\"\"\n        Compute Lp norm of a vector.\n    \n        Args:\n            v: Vector of shape (n,)\n            p: Norm order (1 for Manhattan, 2 for Euclidean, np.inf for max)\n    \n        Returns:\n            ||v||_p = (sum(|v_i|^p))^(1/p)\n            For p=inf, returns max(|v_i|)\n    \n        Hint: Handle p=np.inf as special case\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:70: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 6.962497718632221e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_identical_vectors",
+      "lineno": 98,
+      "outcome": "failed",
+      "keywords": [
+        "test_identical_vectors",
+        "TestCosineSimilarity",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 7.866695523262024e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00010479195043444633,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 101,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestCosineSimilarity object at 0x101984850>\n\n    def test_identical_vectors(self) -> None:\n        v = np.array([1.0, 2.0, 3.0])\n>       result = cosine_similarity(v, v)\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:101: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2., 3.]), w = array([1., 2., 3.])\n\n    def cosine_similarity(v: np.ndarray, w: np.ndarray) -> float:\n        \"\"\"\n        Compute cosine similarity between two vectors.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            cos(theta) = (v \u00b7 w) / (||v|| * ||w||)\n            Returns 0.0 if either vector is zero\n    \n        Raises:\n            ValueError: If dimensions don't match\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.6165968999266624e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_opposite_vectors",
+      "lineno": 103,
+      "outcome": "failed",
+      "keywords": [
+        "test_opposite_vectors",
+        "TestCosineSimilarity",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 4.7042034566402435e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 8.604186587035656e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 107,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestCosineSimilarity object at 0x101986650>\n\n    def test_opposite_vectors(self) -> None:\n        v = np.array([1.0, 2.0, 3.0])\n        w = -v\n>       result = cosine_similarity(v, w)\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:107: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2., 3.]), w = array([-1., -2., -3.])\n\n    def cosine_similarity(v: np.ndarray, w: np.ndarray) -> float:\n        \"\"\"\n        Compute cosine similarity between two vectors.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            cos(theta) = (v \u00b7 w) / (||v|| * ||w||)\n            Returns 0.0 if either vector is zero\n    \n        Raises:\n            ValueError: If dimensions don't match\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.3833937272429466e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_orthogonal_vectors",
+      "lineno": 109,
+      "outcome": "failed",
+      "keywords": [
+        "test_orthogonal_vectors",
+        "TestCosineSimilarity",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 4.8416899517178535e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 7.1333022788167e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 113,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestCosineSimilarity object at 0x101985690>\n\n    def test_orthogonal_vectors(self) -> None:\n        v = np.array([1.0, 0.0, 0.0])\n        w = np.array([0.0, 1.0, 0.0])\n>       result = cosine_similarity(v, w)\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:113: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 0., 0.]), w = array([0., 1., 0.])\n\n    def cosine_similarity(v: np.ndarray, w: np.ndarray) -> float:\n        \"\"\"\n        Compute cosine similarity between two vectors.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            cos(theta) = (v \u00b7 w) / (||v|| * ||w||)\n            Returns 0.0 if either vector is zero\n    \n        Raises:\n            ValueError: If dimensions don't match\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 5.987519398331642e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_zero_vector",
+      "lineno": 115,
+      "outcome": "failed",
+      "keywords": [
+        "test_zero_vector",
+        "TestCosineSimilarity",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 4.970910958945751e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 8.400017395615578e-05,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 119,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestCosineSimilarity object at 0x1019862d0>\n\n    def test_zero_vector(self) -> None:\n        v = np.array([1.0, 2.0, 3.0])\n        w = np.zeros(3)\n>       result = cosine_similarity(v, w)\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:119: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2., 3.]), w = array([0., 0., 0.])\n\n    def cosine_similarity(v: np.ndarray, w: np.ndarray) -> float:\n        \"\"\"\n        Compute cosine similarity between two vectors.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            cos(theta) = (v \u00b7 w) / (||v|| * ||w||)\n            Returns 0.0 if either vector is zero\n    \n        Raises:\n            ValueError: If dimensions don't match\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.016591891646385e-05,
+        "outcome": "passed"
+      }
+    },
+    {
+      "nodeid": "stages/s02_linear_algebra/tests/test_vector_ops.py::TestCosineSimilarity::test_dimension_mismatch",
+      "lineno": 121,
+      "outcome": "failed",
+      "keywords": [
+        "test_dimension_mismatch",
+        "TestCosineSimilarity",
+        "test_vector_ops.py",
+        "tests",
+        "s02_linear_algebra",
+        "stages",
+        "matrix2genAI",
+        ""
+      ],
+      "setup": {
+        "duration": 6.129196844995022e-05,
+        "outcome": "passed"
+      },
+      "call": {
+        "duration": 0.00012474996037781239,
+        "outcome": "failed",
+        "crash": {
+          "path": "/Users/taejunsong/workspace/matrix2genAI/stages/s02_linear_algebra/starter/vector_ops.py",
+          "lineno": 88,
+          "message": "NotImplementedError"
+        },
+        "traceback": [
+          {
+            "path": "stages/s02_linear_algebra/tests/test_vector_ops.py",
+            "lineno": 126,
+            "message": ""
+          },
+          {
+            "path": "stages/s02_linear_algebra/starter/vector_ops.py",
+            "lineno": 88,
+            "message": "NotImplementedError"
+          }
+        ],
+        "longrepr": "self = <stages.s02_linear_algebra.tests.test_vector_ops.TestCosineSimilarity object at 0x101859690>\n\n    def test_dimension_mismatch(self) -> None:\n        v = np.array([1.0, 2.0])\n        w = np.array([1.0, 2.0, 3.0])\n        with pytest.raises(ValueError):\n>           cosine_similarity(v, w)\n\nstages/s02_linear_algebra/tests/test_vector_ops.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nv = array([1., 2.]), w = array([1., 2., 3.])\n\n    def cosine_similarity(v: np.ndarray, w: np.ndarray) -> float:\n        \"\"\"\n        Compute cosine similarity between two vectors.\n    \n        Args:\n            v: First vector of shape (n,)\n            w: Second vector of shape (n,)\n    \n        Returns:\n            cos(theta) = (v \u00b7 w) / (||v|| * ||w||)\n            Returns 0.0 if either vector is zero\n    \n        Raises:\n            ValueError: If dimensions don't match\n        \"\"\"\n>       raise NotImplementedError\nE       NotImplementedError\n\nstages/s02_linear_algebra/starter/vector_ops.py:88: NotImplementedError"
+      },
+      "teardown": {
+        "duration": 8.44169408082962e-05,
+        "outcome": "passed"
+      }
+    }
+  ]
+}

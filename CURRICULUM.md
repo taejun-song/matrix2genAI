@@ -1,729 +1,743 @@
-# Matrix2GenAI Curriculum
+# Matrix to Generative AI: Complete Curriculum Roadmap
 
-A comprehensive, hands-on curriculum for learning AI from mathematical foundations to generative models.
+## Overview
 
-## Philosophy
+A comprehensive, hands-on curriculum teaching the complete journey from mathematical foundations to state-of-the-art generative AI. Each stage builds on previous knowledge through implementation-focused assignments.
 
-- **Learn by building**: Implement everything from scratch
-- **Test-driven**: Each stage provides pytest tests; students write code to pass them
-- **Progressive**: Each stage builds on previous concepts
-- **No solutions provided**: Students must solve problems themselves
-- **Autograded**: Automated grading system to track progress
-
-## Curriculum Overview
-
-### Part 1: Mathematical Foundations (s01-s05)
-
-#### s01: Number Systems and Bits ✓
-**Status**: Implemented
-**Duration**: 2-3 days
-**Prerequisites**: Basic Python, NumPy basics
-**Concepts**: Fixed-point arithmetic, quantization, numerical stability
-**Problems**:
-- Fixed-point encoding/decoding
-- Fixed-point arithmetic with overflow handling
-- Quantization error bounds
-
-**Learning Objectives**:
-- Understand how numbers are represented in computers
-- Recognize numerical stability issues in ML
-- Implement low-level arithmetic operations
-
-#### s02: Linear Algebra - Vectors and Matrices
-**Duration**: 2-3 days
-**Prerequisites**: Basic Python, NumPy basics
-**Concepts**: Vector operations, matrix multiplication, determinants, inverses, eigenvalues
-**Problems**:
-- Implement vector dot product, norm, distance
-- Matrix multiplication (naive and blocked)
-- Gaussian elimination for solving linear systems
-- Computing eigenvalues/eigenvectors (power iteration)
-- Matrix decomposition (LU, QR basics)
-
-**Learning Objectives**:
-- Master fundamental linear algebra operations
-- Understand computational complexity of matrix operations
-- Build intuition for numerical stability
-
-**Tests**:
-- Correctness vs NumPy reference
-- Numerical stability checks
-- Edge cases (singular matrices, zero vectors)
-
-#### s03: Calculus - Derivatives and Gradients
-**Duration**: 2-3 days
-**Prerequisites**: s02
-**Concepts**: Numerical differentiation, partial derivatives, gradients, chain rule
-**Problems**:
-- Numerical gradient computation (finite differences)
-- Implement automatic differentiation (forward mode)
-- Implement reverse-mode AD (simple backprop)
-- Gradient checking utilities
-- Jacobian and Hessian computation
-
-**Learning Objectives**:
-- Understand how gradients are computed
-- Build foundation for backpropagation
-- Learn numerical differentiation techniques
-
-**Tests**:
-- Gradient correctness for polynomial, trig, exp functions
-- Chain rule verification
-- Numerical stability (step size)
-
-#### s04: Probability and Statistics
-**Duration**: 2-3 days
-**Prerequisites**: s02, s03
-**Concepts**: Distributions, expectation, variance, covariance, MLE, MAP
-**Problems**:
-- Implement common distributions (Normal, Bernoulli, Categorical)
-- Sample generation and PDF/PMF computation
-- Computing mean, variance, covariance from data
-- Maximum Likelihood Estimation for simple distributions
-- Bayesian inference (simple cases)
-
-**Learning Objectives**:
-- Understand probabilistic foundations of ML
-- Implement statistical estimators
-- Build intuition for uncertainty
-
-**Tests**:
-- Statistical properties (mean, variance of samples)
-- MLE parameter recovery
-- Bayes rule verification
-
-#### s05: Optimization Fundamentals
-**Duration**: 3-4 days
-**Prerequisites**: s02, s03, s04
-**Concepts**: Gradient descent, convexity, line search, convergence
-**Problems**:
-- Implement gradient descent with learning rate scheduling
-- Implement Newton's method
-- Line search methods (backtracking, exact)
-- Constrained optimization (projected gradient descent)
-- Convergence analysis tools
-
-**Learning Objectives**:
-- Master optimization algorithms used in ML
-- Understand convergence properties
-- Learn hyperparameter tuning for optimizers
-
-**Tests**:
-- Convergence on convex quadratic functions
-- Finding minima of test functions (Rosenbrock, etc.)
-- Learning rate sensitivity
+**Total Duration:** 15-20 weeks (3-4 stages per week)
+**Target Audience:** Students with basic programming knowledge
+**Learning Style:** Learn by building - implement everything from scratch
 
 ---
 
-### Part 2: Machine Learning Fundamentals (s06-s10)
+## Part 1: Mathematical Foundations (Weeks 1-2) ✅ COMPLETED
 
-#### s06: Linear Regression from Scratch
-**Duration**: 2-3 days
-**Prerequisites**: s02, s03, s05
-**Concepts**: Least squares, normal equations, gradient descent, feature scaling
-**Problems**:
-- Implement linear regression (closed-form solution)
-- Implement with gradient descent
-- Feature normalization/standardization
-- Polynomial feature expansion
-- R² score and MSE computation
+### s01: Number Systems and Bits (2-3 days) ⭐⭐
+**Status:** ✅ Complete
 
-**Learning Objectives**:
-- First complete ML algorithm implementation
-- Understand optimization vs closed-form solutions
-- Learn feature engineering basics
+**Topics:**
+- Fixed-point arithmetic
+- Quantization and numerical stability
+- Overflow handling (saturation vs wrapping)
 
-**Tests**:
-- Convergence to analytical solution
-- Prediction accuracy on toy datasets
-- Feature scaling correctness
+**Key Functions:** `to_fixed`, `from_fixed`, `fxp_add`, `fxp_mul`
 
-#### s07: Logistic Regression and Classification
-**Duration**: 2-3 days
-**Prerequisites**: s06
-**Concepts**: Sigmoid, cross-entropy loss, binary/multiclass classification
-**Problems**:
-- Implement sigmoid and softmax functions
-- Binary logistic regression with gradient descent
-- Multiclass logistic regression (one-vs-all, softmax)
-- Cross-entropy loss computation
-- Accuracy, precision, recall, F1 metrics
+**Why it matters:** Understanding numerical representations is crucial for ML optimization and model quantization.
 
-**Learning Objectives**:
-- Transition from regression to classification
-- Understand loss functions for classification
-- Learn evaluation metrics
+---
 
-**Tests**:
-- Binary classification on synthetic data
-- Multiclass classification (Iris dataset format)
-- Metric computation correctness
+### s02: Linear Algebra - Vectors and Matrices (2-3 days) ⭐⭐⭐
+**Status:** ✅ Complete
 
-#### s08: Gradient Descent Variants
-**Duration**: 3-4 days
-**Prerequisites**: s06, s07
-**Concepts**: SGD, mini-batch, momentum, RMSprop, Adam
-**Problems**:
-- Implement batch, mini-batch, SGD
-- Implement momentum-based optimizers
-- Implement RMSprop
-- Implement Adam optimizer
-- Learning rate schedules (step decay, exponential)
+**Topics:**
+- Vector operations (add, dot product, norms)
+- Matrix operations (multiply, transpose, trace)
+- Linear systems (Gaussian elimination, LU decomposition)
+- Matrix decompositions (QR, eigenvalues)
 
-**Learning Objectives**:
-- Understand modern optimization algorithms
-- Learn adaptive learning rate methods
-- Compare optimization strategies
+**Key Functions:** 18 functions across 4 modules
 
-**Tests**:
-- Convergence speed comparisons
-- Optimization on non-convex functions
-- Hyperparameter sensitivity
+**Why it matters:** Linear algebra is the language of machine learning. Neural networks are matrix multiplication chains.
 
-#### s09: Regularization and Overfitting
-**Duration**: 2-3 days
-**Prerequisites**: s06, s07
-**Concepts**: L1/L2 regularization, cross-validation, bias-variance tradeoff
-**Problems**:
-- Implement L1 (Lasso) and L2 (Ridge) regularization
-- K-fold cross-validation
-- Train/validation/test split utilities
-- Learning curves visualization data
-- Early stopping implementation
+---
 
-**Learning Objectives**:
-- Understand overfitting and generalization
-- Learn model selection techniques
-- Implement validation strategies
+### s03: Calculus - Derivatives and Gradients (2-3 days) ⭐⭐⭐
+**Status:** ✅ Complete
 
-**Tests**:
-- Regularization reduces overfitting
-- CV selects better hyperparameters
-- Early stopping prevents overfitting
+**Topics:**
+- Numerical differentiation (finite differences)
+- Automatic differentiation (forward mode)
+- Reverse-mode autodiff (backpropagation foundation)
+- Gradient checking
 
-#### s10: Decision Trees and Ensembles
-**Duration**: 3-4 days
-**Prerequisites**: s04, s07
-**Concepts**: Information gain, Gini index, tree building, random forests
-**Problems**:
-- Implement decision tree (ID3/CART algorithm)
+**Key Functions:** 8+ functions including computational graph
+
+**Why it matters:** Backpropagation is reverse-mode autodiff. You'll implement the core of PyTorch/TensorFlow.
+
+---
+
+### s04: Probability and Statistics (2-3 days) ⭐⭐
+**Status:** ✅ Complete
+
+**Topics:**
+- Probability distributions (Normal, Bernoulli, Categorical)
+- Statistical measures (mean, variance, covariance)
+- Maximum Likelihood Estimation (MLE)
+- Maximum A Posteriori (MAP) estimation
+
+**Key Functions:** 9 functions across 3 modules
+
+**Why it matters:** ML is probabilistic modeling. Understanding distributions is essential for generative models.
+
+---
+
+### s05: Optimization Fundamentals (3-4 days) ⭐⭐⭐
+**Status:** ✅ Complete
+
+**Topics:**
+- Gradient descent variants (vanilla, momentum)
+- Adaptive optimizers (AdaGrad, RMSprop, Adam)
+- Learning rate schedules
+- Line search methods
+
+**Key Functions:** 9 functions across 3 modules
+
+**Why it matters:** Training neural networks is an optimization problem. You'll use these optimizers daily.
+
+---
+
+## Part 2: Machine Learning Fundamentals (Weeks 3-4)
+
+### s06: Linear Regression & Gradient Descent (3-4 days) ⭐⭐⭐
+**Status:** ✅ Complete
+
+**Topics:**
+- Linear models (univariate and multivariate)
+- Normal equations (analytical solution)
+- Gradient descent optimization
+- Cost functions and metrics (MSE, MAE, R²)
+- Feature scaling (standardization, normalization)
+- Train/test splitting
+
+**Key Implementations:**
+- `LinearRegression` class (normal equations + gradient descent)
+- 5 evaluation metrics
+- `StandardScaler`, `MinMaxScaler`
+- `train_test_split`, `polynomial_features`
+
+**Prerequisites:** s02 (Linear Algebra), s03 (Calculus), s05 (Optimization)
+
+**Why it matters:** First complete ML pipeline. Connects math to prediction. Foundation for all supervised learning.
+
+---
+
+### s07: Logistic Regression & Classification (3-4 days) ⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Binary classification
+- Sigmoid function and logistic model
+- Cross-entropy loss
+- Multi-class classification (one-vs-rest, softmax)
+- Classification metrics (accuracy, precision, recall, F1, ROC-AUC)
+- Decision boundaries
+
+**Key Implementations:**
+- `LogisticRegression` class
+- `sigmoid`, `softmax` activation functions
+- Binary and multi-class cross-entropy loss
+- Confusion matrix and classification metrics
+- Decision boundary visualization helpers
+
+**Real-world applications:** Spam detection, medical diagnosis, fraud detection
+
+---
+
+### s08: Feature Engineering & Data Preprocessing (2-3 days) ⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Handling missing data (imputation strategies)
+- Categorical encoding (one-hot, label encoding)
+- Feature selection (variance threshold, correlation)
+- Feature extraction (PCA basics)
+- Outlier detection and handling
+- Data augmentation basics
+
+**Key Implementations:**
+- `SimpleImputer` (mean, median, mode)
+- `OneHotEncoder`, `LabelEncoder`
+- `PCA` implementation
+- Outlier detection methods
+- Feature importance ranking
+
+**Real-world applications:** Data cleaning pipelines, dimensionality reduction
+
+---
+
+### s09: Regularization & Model Selection (3-4 days) ⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Overfitting vs underfitting
+- L1 regularization (Lasso) - feature selection
+- L2 regularization (Ridge) - weight decay
+- Elastic Net (combined L1+L2)
+- Cross-validation (k-fold, stratified)
+- Hyperparameter tuning
+- Learning curves and validation curves
+
+**Key Implementations:**
+- `Ridge`, `Lasso`, `ElasticNet` regression
+- `KFoldCV` class
+- Grid search for hyperparameters
+- Learning curve generators
+- Regularization path visualization
+
+**Real-world applications:** Preventing overfitting, model selection, automated ML
+
+---
+
+### s10: Decision Trees & Ensemble Methods (4-5 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Decision tree learning (CART algorithm)
 - Information gain and Gini impurity
 - Tree pruning
-- Bootstrap sampling
-- Random forest (bagging + feature randomness)
+- Random Forests (bagging)
+- Gradient Boosting basics
+- Feature importance from trees
 
-**Learning Objectives**:
-- Learn non-linear models
-- Understand ensemble methods
-- Implement tree-based algorithms
+**Key Implementations:**
+- `DecisionTree` class (classification + regression)
+- Split criteria (Gini, entropy, MSE)
+- `RandomForest` with bootstrap sampling
+- Simple gradient boosting
+- Feature importance extraction
 
-**Tests**:
-- Tree correctly splits data
-- Forest outperforms single tree
-- Feature importance computation
+**Real-world applications:** Tabular data competitions, interpretable models
 
 ---
 
-### Part 3: Neural Networks and Deep Learning (s11-s15)
+## Part 3: Neural Networks & Deep Learning (Weeks 5-7)
 
-#### s11: Single Neuron and Activation Functions
-**Duration**: 2 days
-**Prerequisites**: s07, s08
-**Concepts**: Perceptron, activations (ReLU, tanh, sigmoid), forward/backward pass
-**Problems**:
-- Implement activation functions (ReLU, LeakyReLU, tanh, sigmoid, Swish)
-- Implement their derivatives
-- Single neuron forward/backward pass
-- Perceptron learning algorithm
+### s11: Perceptrons & Activation Functions (2-3 days) ⭐⭐
+**Status:** 🔄 To be created
 
-**Learning Objectives**:
-- Build foundation for neural networks
-- Understand non-linear activations
-- Implement gradient computation
+**Topics:**
+- Perceptron algorithm
+- Activation functions (sigmoid, tanh, ReLU, Leaky ReLU, ELU, GELU)
+- Forward propagation
+- Single-layer networks
+- XOR problem and non-linearity
 
-**Tests**:
-- Activation function shapes and ranges
-- Gradient correctness (numerical vs analytical)
-- Perceptron learns linearly separable data
+**Key Implementations:**
+- `Perceptron` class
+- 8+ activation functions with derivatives
+- Single-layer neural network
+- Activation function comparison and visualization
 
-#### s12: Feedforward Neural Networks (Backpropagation)
-**Duration**: 4-5 days
-**Prerequisites**: s11
-**Concepts**: Multi-layer perceptron, backpropagation, weight initialization
-**Problems**:
-- Implement dense layer (forward/backward)
-- Implement multi-layer network
-- Backpropagation algorithm
-- Weight initialization strategies (Xavier, He)
-- Mini-batch training loop
+**Prerequisites:** s03 (autodiff), s06-s07 (regression/classification)
 
-**Learning Objectives**:
-- Master backpropagation algorithm
-- Understand deep learning fundamentals
-- Learn initialization techniques
+**Why it matters:** Neural networks are compositions of these building blocks.
 
-**Tests**:
-- Gradient checking for backprop
-- Network learns XOR problem
-- Network learns MNIST-like data
-- Different initializations affect training
+---
 
-#### s13: Convolutional Neural Networks
-**Duration**: 4-5 days
-**Prerequisites**: s12
-**Concepts**: Convolution, pooling, CNNs for images, receptive fields
-**Problems**:
-- Implement 2D convolution (forward/backward)
-- Implement max/average pooling
-- Implement convolutional layer
-- Build simple CNN architecture
-- Flatten layer for transitioning to dense
+### s12: Feedforward Networks & Backpropagation (4-5 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
 
-**Learning Objectives**:
-- Understand CNNs for computer vision
-- Learn spatial feature extraction
-- Implement efficient convolution
+**Topics:**
+- Multi-layer perceptrons (MLPs)
+- Backpropagation algorithm (full derivation)
+- Weight initialization strategies
+- Vanishing/exploding gradients
+- Forward and backward passes
+- Mini-batch training
 
-**Tests**:
-- Convolution output shapes correct
-- Gradient checking for conv layer
-- CNN learns simple image classification
-- Pooling reduces dimensions correctly
+**Key Implementations:**
+- `Layer` class (Dense/Fully Connected)
+- `NeuralNetwork` class with arbitrary depth
+- Complete backpropagation engine
+- Multiple initialization methods (Xavier, He)
+- Mini-batch gradient descent
 
-#### s14: Recurrent Neural Networks
-**Duration**: 4-5 days
-**Prerequisites**: s12
-**Concepts**: RNN, LSTM, GRU, sequence modeling, BPTT
-**Problems**:
-- Implement vanilla RNN cell (forward/backward)
-- Implement LSTM cell
-- Implement GRU cell
+**Real-world applications:** Image classification (MNIST), tabular prediction
+
+---
+
+### s13: Convolutional Neural Networks (4-5 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Convolution operation (2D)
+- Padding and stride
+- Pooling layers (max, average)
+- CNN architectures (LeNet-style)
+- Feature maps and receptive fields
+- Parameter sharing
+
+**Key Implementations:**
+- `Conv2D` layer with backprop
+- `MaxPool2D`, `AvgPool2D` layers
+- `Flatten` layer
+- Simple CNN architecture
+- Image preprocessing utilities
+
+**Real-world applications:** Image classification, object detection foundations
+
+---
+
+### s14: Recurrent Neural Networks (4-5 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Vanilla RNN architecture
 - Backpropagation through time (BPTT)
-- Sequence-to-sequence wrapper
+- Long Short-Term Memory (LSTM)
+- Gated Recurrent Unit (GRU)
+- Sequence-to-sequence basics
+- Handling variable-length sequences
 
-**Learning Objectives**:
-- Understand sequence modeling
-- Learn gating mechanisms
-- Master BPTT algorithm
+**Key Implementations:**
+- `RNN` cell with forward/backward
+- `LSTM` cell (forget, input, output gates)
+- `GRU` cell
+- Simple sequence models
+- BPTT implementation
 
-**Tests**:
-- RNN learns simple sequences (echo, counting)
-- LSTM handles longer dependencies
-- Gradient flow in LSTM vs vanilla RNN
-- Sequence generation
-
-#### s15: Attention Mechanisms
-**Duration**: 3-4 days
-**Prerequisites**: s14
-**Concepts**: Attention, self-attention, multi-head attention, additive vs dot-product
-**Problems**:
-- Implement scaled dot-product attention
-- Implement multi-head attention
-- Implement additive (Bahdanau) attention
-- Positional encoding
-- Attention mask utilities
-
-**Learning Objectives**:
-- Understand attention for sequence modeling
-- Learn self-attention mechanism
-- Build foundation for Transformers
-
-**Tests**:
-- Attention weights sum to 1
-- Attention focuses on relevant positions
-- Multi-head captures different patterns
-- Masked attention prevents future leakage
+**Real-world applications:** Time series prediction, language modeling basics
 
 ---
 
-### Part 4: Advanced Deep Learning (s16-s19)
+### s15: Attention Mechanisms (3-4 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
 
-#### s16: Transformer Architecture
-**Duration**: 5-6 days
-**Prerequisites**: s15
-**Concepts**: Transformer encoder/decoder, layer norm, residual connections
-**Problems**:
-- Implement layer normalization
-- Implement feed-forward block
-- Implement transformer encoder block
-- Implement transformer decoder block
-- Complete transformer model
+**Topics:**
+- Attention intuition (alignment)
+- Scaled dot-product attention
+- Multi-head attention
+- Self-attention
+- Positional encoding (sinusoidal)
+- Attention visualization
 
-**Learning Objectives**:
-- Master Transformer architecture
-- Understand modern NLP foundation
-- Learn residual connections and normalization
+**Key Implementations:**
+- `ScaledDotProductAttention`
+- `MultiHeadAttention` layer
+- `PositionalEncoding`
+- Attention weight visualization
+- Simple attention-based sequence model
 
-**Tests**:
-- Encoder-decoder dimensions match
-- Causal masking in decoder
-- Translation toy task
-- Model learns sequence transformations
+**Prerequisites:** s14 (RNNs), strong understanding of matrix operations
 
-#### s17: Training Techniques
-**Duration**: 3-4 days
-**Prerequisites**: s12, s13
-**Concepts**: BatchNorm, Dropout, initialization, gradient clipping
-**Problems**:
-- Implement batch normalization (train/eval modes)
-- Implement dropout
-- Implement gradient clipping
-- Implement various initialization schemes
+**Why it matters:** Foundation for Transformers and all modern LLMs.
+
+---
+
+## Part 4: Advanced Deep Learning (Weeks 8-9)
+
+### s16: Transformers Architecture (5-6 days) ⭐⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Transformer encoder architecture
+- Transformer decoder architecture
+- Feed-forward networks in Transformers
+- Layer normalization
+- Residual connections
+- Masked attention
+- Complete encoder-decoder model
+
+**Key Implementations:**
+- `TransformerEncoderLayer`
+- `TransformerDecoderLayer`
+- `LayerNorm`
+- Full `Transformer` model
+- Training loop for sequence tasks
+
+**Real-world applications:** Machine translation, text generation, foundation for GPT/BERT
+
+---
+
+### s17: Training Techniques & Regularization (3-4 days) ⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Batch Normalization
+- Dropout (standard and variants)
+- Data augmentation (images and text)
+- Gradient clipping
+- Early stopping
+- Model checkpointing
 - Learning rate warmup
 
-**Learning Objectives**:
-- Learn advanced training techniques
-- Understand regularization in deep learning
-- Master training stabilization methods
+**Key Implementations:**
+- `BatchNorm1D`, `BatchNorm2D`
+- `Dropout` layer
+- Image augmentation functions
+- Training utilities (callbacks, checkpointing)
+- Learning rate schedulers with warmup
 
-**Tests**:
-- BatchNorm stabilizes training
-- Dropout prevents overfitting
-- Gradient clipping prevents explosion
-- Proper train/eval mode switching
+**Real-world applications:** Training stable, generalizable models
 
-#### s18: Embeddings and Word Vectors
-**Duration**: 3-4 days
-**Prerequisites**: s12
-**Concepts**: Word embeddings, Word2Vec (Skip-gram, CBOW), negative sampling
-**Problems**:
-- Implement embedding layer
-- Implement Skip-gram model
-- Implement CBOW model
+---
+
+### s18: Embeddings & Word Vectors (3-4 days) ⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Word embeddings concept
+- Word2Vec (Skip-gram and CBOW)
 - Negative sampling
-- Embedding similarity and analogies
+- GloVe intuition
+- Embedding layer implementation
+- Token/vocabulary management
+- Subword tokenization basics
 
-**Learning Objectives**:
-- Understand word representations
-- Learn unsupervised learning for NLP
-- Implement efficient training techniques
+**Key Implementations:**
+- `Embedding` layer with gradient updates
+- Word2Vec training (Skip-gram)
+- Vocabulary builder
+- Simple tokenizer
+- Embedding similarity search
 
-**Tests**:
-- Embeddings capture semantic similarity
-- Analogies work (king - man + woman ≈ queen)
-- Negative sampling improves efficiency
-
-#### s19: Sequence-to-Sequence Models
-**Duration**: 3-4 days
-**Prerequisites**: s14, s15
-**Concepts**: Encoder-decoder, teacher forcing, beam search
-**Problems**:
-- Implement encoder-decoder architecture
-- Implement teacher forcing
-- Implement beam search
-- Implement greedy decoding
-- Attention-based seq2seq
-
-**Learning Objectives**:
-- Understand seq2seq modeling
-- Learn decoding strategies
-- Build translation systems
-
-**Tests**:
-- Model learns reversing sequences
-- Model learns simple translation
-- Beam search improves quality
-- Teacher forcing vs free-running
+**Real-world applications:** NLP preprocessing, semantic search
 
 ---
 
-### Part 5: Reinforcement Learning (s20-s23)
+### s19: Sequence-to-Sequence Models (3-4 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
 
-#### s20: Markov Decision Processes
-**Duration**: 3-4 days
-**Prerequisites**: s04
-**Concepts**: States, actions, rewards, policies, value functions
-**Problems**:
-- Implement MDP environment (GridWorld)
-- Policy evaluation (iterative)
-- Value iteration
-- Policy iteration
+**Topics:**
+- Encoder-decoder architecture
+- Teacher forcing
+- Beam search decoding
+- Attention in seq2seq
+- Evaluation metrics (BLEU, perplexity)
+
+**Key Implementations:**
+- Seq2Seq model (RNN-based and Transformer-based)
+- Beam search decoder
+- Greedy and sampling decoding
+- BLEU score calculator
+- Training with teacher forcing
+
+**Real-world applications:** Machine translation, text summarization, chatbots
+
+---
+
+## Part 5: Reinforcement Learning (Weeks 10-11)
+
+### s20: Markov Decision Processes (3-4 days) ⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- MDP formulation (states, actions, rewards, transitions)
+- Value functions (state-value, action-value)
 - Bellman equations
+- Value iteration algorithm
+- Policy iteration algorithm
+- Gridworld environments
 
-**Learning Objectives**:
-- Understand RL fundamentals
-- Learn dynamic programming
-- Implement MDP solvers
+**Key Implementations:**
+- Simple Gridworld environment
+- Value iteration solver
+- Policy iteration solver
+- MDP visualization
+- Optimal policy extraction
 
-**Tests**:
-- Value iteration converges
-- Optimal policy found for GridWorld
-- Bellman consistency checks
-
-#### s21: Q-Learning and SARSA
-**Duration**: 3-4 days
-**Prerequisites**: s20
-**Concepts**: Temporal difference learning, Q-learning, SARSA, exploration vs exploitation
-**Problems**:
-- Implement tabular Q-learning
-- Implement SARSA
-- ε-greedy exploration
-- Q-function approximation (simple)
-- Experience replay buffer
-
-**Learning Objectives**:
-- Learn model-free RL
-- Understand on-policy vs off-policy
-- Implement value-based methods
-
-**Tests**:
-- Q-learning converges to optimal policy
-- SARSA vs Q-learning (on-policy vs off-policy)
-- Exploration rate decay
-- Agent solves FrozenLake-like environment
-
-#### s22: Policy Gradients
-**Duration**: 4-5 days
-**Prerequisites**: s12, s21
-**Concepts**: REINFORCE, policy gradient theorem, baseline
-**Problems**:
-- Implement REINFORCE algorithm
-- Implement baseline (value function)
-- Monte Carlo returns computation
-- Policy network (neural network policy)
-- Advantage estimation
-
-**Learning Objectives**:
-- Understand policy-based methods
-- Learn policy gradient theorem
-- Implement variance reduction techniques
-
-**Tests**:
-- REINFORCE learns CartPole-like task
-- Baseline reduces variance
-- Policy network gradients correct
-
-#### s23: Actor-Critic Methods
-**Duration**: 4-5 days
-**Prerequisites**: s22
-**Concepts**: Actor-critic, A2C, PPO, trust regions
-**Problems**:
-- Implement advantage actor-critic (A2C)
-- Implement generalized advantage estimation (GAE)
-- Implement PPO clipping
-- Implement value network training
-- Parallel environment wrapper
-
-**Learning Objectives**:
-- Master modern RL algorithms
-- Understand trust region methods
-- Learn parallel training
-
-**Tests**:
-- A2C learns continuous control
-- PPO improves over vanilla PG
-- GAE reduces variance
-- Clipping prevents destructive updates
+**Real-world applications:** Game playing, robotics, resource allocation
 
 ---
 
-### Part 6: Generative AI (s24-s28)
+### s21: Q-Learning & Temporal Difference (3-4 days) ⭐⭐⭐
+**Status:** 🔄 To be created
 
-#### s24: Autoencoders
-**Duration**: 3-4 days
-**Prerequisites**: s12, s13
-**Concepts**: Autoencoders, VAE, latent space, reparameterization trick
-**Problems**:
-- Implement vanilla autoencoder
-- Implement variational autoencoder (VAE)
+**Topics:**
+- Temporal Difference (TD) learning
+- Q-Learning algorithm
+- Epsilon-greedy exploration
+- Experience replay basics
+- Deep Q-Networks (DQN) introduction
+- Frozen Lake / CartPole environments
+
+**Key Implementations:**
+- Tabular Q-Learning
+- Simple DQN (neural Q-function)
+- Epsilon-greedy policy
+- Basic experience replay buffer
+- Training loop with environment interaction
+
+**Real-world applications:** Game AI, autonomous navigation
+
+---
+
+### s22: Policy Gradient Methods (4-5 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Policy-based vs value-based RL
+- REINFORCE algorithm
+- Policy gradient theorem
+- Baseline (value function as baseline)
+- Advantage functions
+- Continuous action spaces
+
+**Key Implementations:**
+- Policy network (stochastic policies)
+- REINFORCE with baseline
+- Advantage estimation
+- Continuous action sampling
+- Training on CartPole/LunarLander
+
+**Real-world applications:** Robotics control, continuous control tasks
+
+---
+
+### s23: Actor-Critic & Advanced RL (4-5 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Actor-Critic architecture
+- Advantage Actor-Critic (A2C)
+- Proximal Policy Optimization (PPO) intuition
+- Generalized Advantage Estimation (GAE)
+- Parallel environment training
+
+**Key Implementations:**
+- A2C algorithm
+- PPO basics (clipped objective)
+- GAE calculator
+- Multi-environment wrapper
+- Complete training pipeline
+
+**Real-world applications:** Complex control, multi-agent systems
+
+---
+
+## Part 6: Generative AI (Weeks 12-15)
+
+### s24: Variational Autoencoders (4-5 days) ⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Autoencoder basics (encoder-decoder)
+- Latent space representation
+- Variational inference
 - Reparameterization trick
-- KL divergence computation
+- KL divergence loss
+- VAE training (ELBO objective)
 - Latent space interpolation
 
-**Learning Objectives**:
-- Understand generative models
-- Learn variational inference
-- Implement VAE
+**Key Implementations:**
+- `Encoder` and `Decoder` networks
+- Reparameterization layer
+- VAE loss (reconstruction + KL)
+- Complete VAE model
+- Latent space visualization and sampling
 
-**Tests**:
-- AE reconstructs images
-- VAE generates new samples
-- KL divergence prevents collapse
-- Latent space is smooth
+**Prerequisites:** s12 (Neural Networks), s04 (Probability)
 
-#### s25: Generative Adversarial Networks
-**Duration**: 4-5 days
-**Prerequisites**: s12, s13
-**Concepts**: GANs, generator, discriminator, adversarial training
-**Problems**:
-- Implement generator network
-- Implement discriminator network
-- GAN training loop (alternating optimization)
-- Mode collapse detection
-- Various GAN losses (WGAN, LSGAN)
-
-**Learning Objectives**:
-- Understand adversarial training
-- Learn GAN training techniques
-- Handle training instabilities
-
-**Tests**:
-- GAN generates realistic samples
-- Training stabilizes
-- Different losses affect quality
-- FID/IS score computation
-
-#### s26: Diffusion Models
-**Duration**: 5-6 days
-**Prerequisites**: s12, s13, s04
-**Concepts**: DDPM, noise schedule, denoising, reverse diffusion
-**Problems**:
-- Implement forward diffusion process
-- Implement noise schedule (linear, cosine)
-- Implement denoising U-Net
-- Implement reverse diffusion sampling
-- DDIM sampling (faster)
-
-**Learning Objectives**:
-- Understand diffusion models
-- Learn iterative refinement generation
-- Implement modern image generation
-
-**Tests**:
-- Forward process adds noise correctly
-- Denoising network learns to reverse
-- Sampling generates images
-- DDIM faster than DDPM
-
-#### s27: Large Language Models Basics
-**Duration**: 5-6 days
-**Prerequisites**: s16, s18
-**Concepts**: GPT architecture, causal language modeling, tokenization
-**Problems**:
-- Implement BPE tokenizer
-- Implement GPT architecture (decoder-only transformer)
-- Causal language modeling loss
-- Text generation (sampling strategies)
-- Temperature and top-k/top-p sampling
-
-**Learning Objectives**:
-- Understand LLM architecture
-- Learn autoregressive generation
-- Implement sampling strategies
-
-**Tests**:
-- Model learns next-token prediction
-- Different sampling strategies vary output
-- Temperature controls randomness
-- Model generates coherent text
-
-#### s28: Fine-tuning and RLHF
-**Duration**: 5-6 days
-**Prerequisites**: s22, s27
-**Concepts**: Transfer learning, fine-tuning, RLHF, reward modeling
-**Problems**:
-- Implement supervised fine-tuning
-- Implement reward model training
-- Implement PPO for RLHF
-- KL divergence constraint (vs reference model)
-- Efficient fine-tuning (LoRA concept)
-
-**Learning Objectives**:
-- Understand transfer learning
-- Learn alignment techniques
-- Implement RLHF pipeline
-
-**Tests**:
-- Fine-tuning improves task performance
-- Reward model learns preferences
-- RLHF aligns model to reward
-- KL penalty prevents drift
+**Real-world applications:** Image generation, anomaly detection, data compression
 
 ---
 
-## Repository Structure
+### s25: Generative Adversarial Networks (5-6 days) ⭐⭐⭐⭐⭐
+**Status:** 🔄 To be created
 
-```
-matrix2genAI/
-├── README.md                 # Overview and getting started
-├── CURRICULUM.md            # This file - complete curriculum
-├── scripts/
-│   └── grade.py             # Autograding script
-├── stages/
-│   ├── s01_number_systems_and_bits/
-│   │   ├── spec.md          # Problem specification
-│   │   ├── README.md        # Stage overview
-│   │   ├── starter/
-│   │   │   └── *.py         # Skeleton code with TODOs
-│   │   └── tests/
-│   │       └── test_*.py    # Pytest tests
-│   ├── s02_linear_algebra/
-│   │   └── ...
-│   └── ...
-├── pyproject.toml
-└── pytest.ini
-```
+**Topics:**
+- GAN framework (generator vs discriminator)
+- Adversarial training
+- Minimax objective
+- Training instabilities
+- Deep Convolutional GAN (DCGAN)
+- Mode collapse and solutions
+- Wasserstein GAN intuition
 
-## Testing Philosophy
+**Key Implementations:**
+- `Generator` network
+- `Discriminator` network
+- Adversarial training loop
+- DCGAN architecture
+- Loss variations (vanilla, WGAN)
+- FID score calculator (optional)
 
-Each stage provides comprehensive tests:
-1. **Correctness tests**: Verify implementation matches specifications
-2. **Edge case tests**: Handle boundary conditions
-3. **Numerical stability tests**: Check for numerical issues
-4. **Performance hints**: Some tests hint at efficiency (but focus is correctness)
-5. **Integration tests**: Ensure components work together
+**Real-world applications:** Image synthesis, data augmentation, style transfer
 
-## Autograding
+---
 
-Students can grade their work using:
+### s26: Diffusion Models (5-6 days) ⭐⭐⭐⭐⭐
+**Status:** 🔄 To be created
 
+**Topics:**
+- Diffusion process (forward/reverse)
+- Denoising Diffusion Probabilistic Models (DDPM)
+- Noise schedule (linear, cosine)
+- U-Net architecture for denoising
+- Training objective (noise prediction)
+- Sampling process (reverse diffusion)
+- Classifier-free guidance basics
+
+**Key Implementations:**
+- Forward diffusion (noise addition)
+- Simple U-Net architecture
+- DDPM training objective
+- Reverse sampling process
+- Noise schedule implementations
+- Conditional generation basics
+
+**Prerequisites:** s13 (CNNs), s04 (Probability), strong understanding of s12
+
+**Real-world applications:** State-of-the-art image generation (Stable Diffusion, DALL-E), video generation
+
+---
+
+### s27: Large Language Models (6-7 days) ⭐⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Transformer-based LLM architecture
+- Causal (autoregressive) language modeling
+- GPT architecture
+- Training on text corpora
+- Next-token prediction
+- Sampling strategies (greedy, top-k, nucleus/top-p)
+- Temperature scaling
+- Context windows and KV caching basics
+
+**Key Implementations:**
+- GPT-style decoder-only Transformer
+- Causal attention mask
+- Language modeling loss (cross-entropy)
+- Text generation with various sampling
+- Simple tokenizer (BPE basics or character-level)
+- Training loop on small text dataset
+
+**Prerequisites:** s16 (Transformers), s18 (Embeddings)
+
+**Real-world applications:** ChatGPT, Claude, GPT-4, code generation, chatbots
+
+---
+
+### s28: RLHF & Fine-tuning (5-6 days) ⭐⭐⭐⭐⭐
+**Status:** 🔄 To be created
+
+**Topics:**
+- Fine-tuning pre-trained models
+- Instruction tuning
+- Reinforcement Learning from Human Feedback (RLHF)
+- Reward modeling
+- Proximal Policy Optimization for LLMs
+- Direct Preference Optimization (DPO) intuition
+- LoRA (Low-Rank Adaptation) basics
+- Safety and alignment
+
+**Key Implementations:**
+- Fine-tuning loop (supervised)
+- Reward model training
+- RLHF pipeline (simplified PPO for language)
+- Preference dataset handling
+- LoRA layer implementation
+- Instruction following evaluation
+
+**Prerequisites:** s22 (Policy Gradients), s23 (Actor-Critic), s27 (LLMs)
+
+**Real-world applications:** ChatGPT training process, custom AI assistants, aligned AI systems
+
+---
+
+## Learning Paths
+
+### Fast Track (Focus on Deep Learning & GenAI)
+Skip or skim: s08, s09, s10 (traditional ML)
+Focus: s01-s07, s11-s28
+
+### Traditional ML Focus
+Complete: s01-s10 in depth
+Optional: s11-s28
+
+### Researcher Path
+Complete all stages with optional extensions
+Implement paper variations for each stage
+
+### Engineer Path
+Complete s01-s07, s11-s19, s27-s28
+Focus on practical implementations
+
+---
+
+## Project Milestones
+
+### Milestone 1 (Week 4): Complete ML Project
+Build an end-to-end ML pipeline using s01-s09 implementations
+
+### Milestone 2 (Week 7): Image Classifier
+Train a CNN from scratch on CIFAR-10 or similar dataset
+
+### Milestone 3 (Week 9): Sequence Model
+Build a machine translation or text generation model
+
+### Milestone 4 (Week 11): RL Agent
+Train an agent to play a game using policy gradients
+
+### Milestone 5 (Week 15): Generative Model
+Train a small-scale generative model (VAE, GAN, or diffusion)
+
+### Final Project (Week 16+): Custom GenAI Application
+Combine multiple concepts to build a unique application
+
+---
+
+## Assessment & Grading
+
+Each stage is graded using:
 ```bash
-# Grade a specific stage
-python scripts/grade.py s01_number_systems_and_bits
-
-# Or using full path
-python scripts/grade.py stages/s01_number_systems_and_bits
-
-# Get JSON output
-python scripts/grade.py s01_number_systems_and_bits --json
+python scripts/grade.py s<XX>_<stage_name>
 ```
 
-The autograder:
-- Runs all tests for a stage
-- Computes a score (0-100%)
-- Provides detailed feedback
-- Tracks test timing
-- Supports timeout per test
+**Grading criteria:**
+- **70%**: Test pass rate (correctness)
+- **15%**: Numerical stability (edge cases)
+- **15%**: Code quality (readability, efficiency)
 
-## Progression Guidelines
+**Target scores:**
+- 85%+: Ready for next stage
+- 70-84%: Review and improve
+- <70%: Re-attempt with more practice
 
-- **Difficulty curve**: Gradual increase, with harder stages in Parts 4-6
-- **Estimated time**: 3-6 months for complete curriculum (depends on background)
-- **Checkpoints**: End of each Part (6 checkpoints total)
-- **Prerequisites**: Each stage lists required prior stages
-- **Recommended pace**: 2-3 stages per week
+---
 
-## Learning Outcomes
+## Resources
 
-By completing this curriculum, students will:
-- ✅ Understand AI/ML from first principles
-- ✅ Implement core algorithms from scratch
-- ✅ Debug and test numerical code
-- ✅ Build production-quality implementations
-- ✅ Understand modern generative AI (LLMs, diffusion models)
-- ✅ Be prepared for research or industry roles in AI/ML
+### Books
+- **Deep Learning** (Goodfellow, Bengio, Courville) - Comprehensive DL textbook
+- **Pattern Recognition and Machine Learning** (Bishop) - Mathematical foundations
+- **Dive into Deep Learning** (Zhang et al.) - Free, code-focused
+- **Reinforcement Learning** (Sutton & Barto) - RL bible
+
+### Online Courses
+- **Stanford CS231n** - CNNs for Visual Recognition
+- **Stanford CS224n** - NLP with Deep Learning
+- **Berkeley CS285** - Deep Reinforcement Learning
+- **Fast.ai** - Practical deep learning
+
+### Papers (Read as you progress)
+- Attention Is All You Need (Transformers) - After s15
+- BERT, GPT-2, GPT-3 papers - After s27
+- DDPM, Stable Diffusion papers - After s26
+- PPO, DQN papers - After s22-s23
+
+---
+
+## Next Steps
+
+After completing this curriculum, you'll be ready to:
+1. Read and implement recent ML/AI papers
+2. Contribute to open-source ML libraries
+3. Build production ML systems
+4. Pursue advanced research or engineering roles
+5. Design custom architectures for specific problems
 
 ## Getting Started
 
-1. Clone the repository
-2. Install dependencies: `uv sync`
-3. Start with s01: `cd stages/s01_number_systems_and_bits`
-4. Read `spec.md` and `README.md`
-5. Implement TODOs in `starter/*.py`
-6. Test your work: `pytest .`
-7. Grade yourself: `python ../../scripts/grade.py .`
-8. Move to next stage when you get 100%!
+```bash
+# Start with stage 1
+cd stages/s01_number_systems
 
-## Contributing
+# Read the materials
+cat README.md
+cat spec.md
 
-This is an educational repository. Students should:
-- ❌ NOT share solutions publicly
-- ✅ Ask questions about concepts
-- ✅ Discuss testing strategies
-- ✅ Share learning experiences
+# Implement the TODOs
+vim starter/*.py
 
-Instructors can:
-- ✅ Extend the curriculum
-- ✅ Add new stages
-- ✅ Improve tests
-- ✅ Add documentation
+# Test your implementation
+pytest tests/ -v
+python scripts/grade.py s01_number_systems
+
+# Repeat for each stage!
+```
+
+---
+
+**Good luck on your journey from matrices to generative AI! 🚀**
