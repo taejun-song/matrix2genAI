@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import numpy as np
-import pytest
 
 from stages.s08_feature_engineering.starter.encoding import (
     label_encode,
@@ -71,8 +70,8 @@ class TestPreprocessingPipeline:
 
         outliers = detect_outliers_iqr(X, multiplier=1.5)
 
-        assert outliers[0, 0] == True
-        assert outliers[1, 1] == True
+        assert outliers[0, 0]
+        assert outliers[1, 1]
 
         X_clean = X[~outliers.any(axis=1)]
         assert X_clean.shape[0] < X.shape[0]
@@ -99,7 +98,7 @@ class TestPreprocessingPipeline:
         X_train_scaled, train_min, train_max = min_max_scale(X_train_clean)
 
         X_test_clean = simple_imputer_strategy(X_test, strategy="mean")
-        X_test_scaled = (X_test_clean - train_min) / (train_max - train_min)
+        (X_test_clean - train_min) / (train_max - train_min)
 
         assert train_min.shape == (5,)
         assert train_max.shape == (5,)
@@ -111,7 +110,7 @@ class TestPreprocessingPipeline:
         X[:, 5] = X[:, 6] + np.random.randn(50) * 0.01
 
         variance_mask = variance_threshold_select(X, threshold=0.01)
-        assert variance_mask[0] == False
+        assert not variance_mask[0]
 
         X_var = X[:, variance_mask]
 

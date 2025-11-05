@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import numpy as np
-import pytest
 
 from stages.s08_feature_engineering.starter.scaling import (
     correlation_filter,
@@ -107,7 +106,7 @@ class TestVarianceThresholdSelect:
 
         selected = variance_threshold_select(X, threshold=100.0)
 
-        assert selected[1] == True
+        assert selected[1]
         assert selected.sum() >= 1
 
     def test_shape(self):
@@ -154,7 +153,7 @@ class TestCorrelationFilter:
 
         selected = correlation_filter(X, threshold=0.9)
 
-        assert selected[0] == True
+        assert selected[0]
 
 
 class TestDetectOutliersIQR:
@@ -163,7 +162,7 @@ class TestDetectOutliersIQR:
 
         outlier_mask = detect_outliers_iqr(X, multiplier=1.5)
 
-        assert outlier_mask[-1, 0] == True
+        assert outlier_mask[-1, 0]
         assert not outlier_mask[:-1, 0].any()
 
     def test_no_outliers(self):
@@ -178,8 +177,8 @@ class TestDetectOutliersIQR:
 
         outlier_mask = detect_outliers_iqr(X, multiplier=1.5)
 
-        assert outlier_mask[0, 0] == True
-        assert outlier_mask[-1, 0] == True
+        assert outlier_mask[0, 0]
+        assert outlier_mask[-1, 0]
 
     def test_multiple_features(self):
         X = np.array([[1, 1], [2, 2], [3, 3], [4, 100]])
@@ -187,7 +186,7 @@ class TestDetectOutliersIQR:
         outlier_mask = detect_outliers_iqr(X, multiplier=1.5)
 
         assert outlier_mask.shape == (4, 2)
-        assert outlier_mask[3, 1] == True
+        assert outlier_mask[3, 1]
 
     def test_custom_multiplier(self):
         X = np.array([[1], [2], [3], [4], [10]])

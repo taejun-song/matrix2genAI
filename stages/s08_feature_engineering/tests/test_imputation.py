@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import numpy as np
-import pytest
 
 from stages.s08_feature_engineering.starter.imputation import (
     find_missing_mask,
