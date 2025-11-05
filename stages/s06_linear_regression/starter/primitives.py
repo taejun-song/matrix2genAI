@@ -25,7 +25,7 @@ def predict(X: np.ndarray, weights: np.ndarray, bias: float) -> np.ndarray:
     # TODO: Implement prediction
     # HINT: Use @ operator for matrix multiplication
     # One line: return X @ weights + bias
-    pass
+    raise NotImplementedError
 
 
 def mse_loss(y_true: np.ndarray, y_pred: np.ndarray) -> float:
@@ -51,7 +51,7 @@ def mse_loss(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     # TODO: Implement MSE
     # HINT: Use np.mean() and squared differences
     # One line: return np.mean((y_true - y_pred) ** 2)
-    pass
+    raise NotImplementedError
 
 
 def mse_gradient(
@@ -93,7 +93,7 @@ def mse_gradient(
     # TODO: Compute bias gradient
     # HINT: grad_b = (2/n) * np.sum(errors)
 
-    pass
+    raise NotImplementedError
 
 
 def r2_score(y_true: np.ndarray, y_pred: np.ndarray) -> float:
@@ -132,7 +132,7 @@ def r2_score(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     # HINT 3: Handle edge case: if SS_tot == 0, return 0.0
     # HINT 4: Return 1 - SS_res / SS_tot
 
-    pass
+    raise NotImplementedError
 
 
 def normal_equation(X: np.ndarray, y: np.ndarray) -> tuple[np.ndarray, float]:
@@ -170,7 +170,7 @@ def normal_equation(X: np.ndarray, y: np.ndarray) -> tuple[np.ndarray, float]:
     #         bias = w_aug[0]
     #         weights = w_aug[1:]
 
-    pass
+    raise NotImplementedError
 
 
 def standardize(X: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
@@ -205,7 +205,7 @@ def standardize(X: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     # HINT 3: Handle zero std: std = np.where(std == 0, 1, std)
     # HINT 4: Standardize: X_scaled = (X - mean) / std
 
-    pass
+    raise NotImplementedError
 
 
 def train_test_split(
@@ -242,7 +242,7 @@ def train_test_split(
     #         y_train = y[:split_idx]
     #         y_test = y[split_idx:]
 
-    pass
+    raise NotImplementedError
 
 
 def polynomial_features(X: np.ndarray, degree: int) -> np.ndarray:
@@ -286,4 +286,4 @@ def polynomial_features(X: np.ndarray, degree: int) -> np.ndarray:
     #
     # return np.hstack(features)
 
-    pass
+    raise NotImplementedError

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import numpy as np
+from numpy.typing import NDArray
 
 from stages.s05_optimization.starter.gradient_descent import (
     gradient_descent,
@@ -9,9 +10,9 @@ from stages.s05_optimization.starter.gradient_descent import (
 
 
 def test_gradient_descent_quadratic() -> None:
-    def f(x):
-        return np.sum(x**2)
-    def grad_f(x):
+    def f(x: NDArray[np.floating]) -> float:
+        return float(np.sum(x**2))
+    def grad_f(x: NDArray[np.floating]) -> NDArray[np.floating]:
         return 2*x
     x0 = np.array([5.0, 5.0])
     x_final, loss_history = gradient_descent(f, grad_f, x0, lr=0.1, num_iters=100)
@@ -20,9 +21,9 @@ def test_gradient_descent_quadratic() -> None:
 
 
 def test_gradient_descent_with_momentum_converges() -> None:
-    def f(x):
-        return np.sum(x**2)
-    def grad_f(x):
+    def f(x: NDArray[np.floating]) -> float:
+        return float(np.sum(x**2))
+    def grad_f(x: NDArray[np.floating]) -> NDArray[np.floating]:
         return 2*x
     x0 = np.array([5.0, 5.0])
     x_final, loss_history = gradient_descent_with_momentum(

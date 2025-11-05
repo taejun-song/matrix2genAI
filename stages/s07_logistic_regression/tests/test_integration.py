@@ -21,7 +21,7 @@ from stages.s07_logistic_regression.starter.metrics import (
 
 
 class TestBinaryClassificationPipeline:
-    def test_simple_binary_training(self):
+    def test_simple_binary_training(self) -> None:
         np.random.seed(42)
 
         X = np.random.randn(100, 2)
@@ -32,8 +32,8 @@ class TestBinaryClassificationPipeline:
         learning_rate = 0.1
         num_epochs = 100
 
-        initial_loss = None
-        final_loss = None
+        initial_loss: float = 0.0
+        final_loss: float = 0.0
 
         for epoch in range(num_epochs):
             y_pred_proba = predict_proba_binary(X, weights, bias)
@@ -58,7 +58,7 @@ class TestBinaryClassificationPipeline:
 
         assert acc > 0.7
 
-    def test_binary_gradient_descent_decreases_loss(self):
+    def test_binary_gradient_descent_decreases_loss(self) -> None:
         np.random.seed(42)
 
         X = np.random.randn(50, 2)
@@ -83,7 +83,7 @@ class TestBinaryClassificationPipeline:
         assert losses[-1] < losses[0]
         assert all(not np.isnan(loss) for loss in losses)
 
-    def test_binary_classification_report(self):
+    def test_binary_classification_report(self) -> None:
         np.random.seed(42)
 
         X = np.random.randn(100, 2)
@@ -109,7 +109,7 @@ class TestBinaryClassificationPipeline:
 
 
 class TestMulticlassClassificationPipeline:
-    def test_simple_multiclass_training(self):
+    def test_simple_multiclass_training(self) -> None:
         np.random.seed(42)
 
         X = np.random.randn(150, 2)
@@ -126,8 +126,8 @@ class TestMulticlassClassificationPipeline:
         learning_rate = 0.1
         num_epochs = 100
 
-        initial_loss = None
-        final_loss = None
+        initial_loss: float = 0.0
+        final_loss: float = 0.0
 
         for epoch in range(num_epochs):
             y_pred_proba = predict_proba_multiclass(X, weights, bias)
@@ -151,7 +151,7 @@ class TestMulticlassClassificationPipeline:
 
         assert acc > 0.3
 
-    def test_multiclass_gradient_descent(self):
+    def test_multiclass_gradient_descent(self) -> None:
         np.random.seed(42)
 
         X = np.random.randn(90, 2)
@@ -182,7 +182,7 @@ class TestMulticlassClassificationPipeline:
 
 
 class TestNumericalStability:
-    def test_sigmoid_large_values(self):
+    def test_sigmoid_large_values(self) -> None:
         from stages.s07_logistic_regression.starter.activations import sigmoid
 
         z = np.array([1000, -1000, 500, -500])
@@ -192,7 +192,7 @@ class TestNumericalStability:
         assert np.all(~np.isinf(result))
         assert np.all((result >= 0) & (result <= 1))
 
-    def test_softmax_large_values(self):
+    def test_softmax_large_values(self) -> None:
         from stages.s07_logistic_regression.starter.activations import softmax
 
         z = np.array([[1000, 1001, 1002], [-1000, -1001, -1002]])
@@ -202,7 +202,7 @@ class TestNumericalStability:
         assert np.all(~np.isinf(result))
         assert np.allclose(result.sum(axis=1), [1.0, 1.0])
 
-    def test_binary_cross_entropy_extreme_probabilities(self):
+    def test_binary_cross_entropy_extreme_probabilities(self) -> None:
         y_true = np.array([1, 0])
         y_pred_proba = np.array([0.99999, 0.00001])
 
@@ -211,7 +211,7 @@ class TestNumericalStability:
         assert np.isfinite(loss)
         assert loss >= 0
 
-    def test_categorical_cross_entropy_extreme_probabilities(self):
+    def test_categorical_cross_entropy_extreme_probabilities(self) -> None:
         y_true = np.array([[1, 0, 0]])
         y_pred_proba = np.array([[0.99999, 0.000005, 0.000005]])
 

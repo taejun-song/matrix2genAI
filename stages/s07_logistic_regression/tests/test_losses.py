@@ -11,7 +11,7 @@ from stages.s07_logistic_regression.starter.losses import (
 
 
 class TestBinaryCrossEntropy:
-    def test_perfect_predictions(self):
+    def test_perfect_predictions(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred_proba = np.array([1.0, 0.0, 1.0, 0.0])
 
@@ -19,7 +19,7 @@ class TestBinaryCrossEntropy:
 
         assert loss < 1e-10
 
-    def test_worst_predictions(self):
+    def test_worst_predictions(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred_proba = np.array([0.0, 1.0, 0.0, 1.0])
 
@@ -27,7 +27,7 @@ class TestBinaryCrossEntropy:
 
         assert loss > 10
 
-    def test_random_predictions(self):
+    def test_random_predictions(self) -> None:
         y_true = np.array([1, 0, 1])
         y_pred_proba = np.array([0.9, 0.1, 0.8])
 
@@ -36,7 +36,7 @@ class TestBinaryCrossEntropy:
         expected = -(np.log(0.9) + np.log(0.9) + np.log(0.8)) / 3
         np.testing.assert_allclose(loss, expected, rtol=1e-5)
 
-    def test_numerical_stability(self):
+    def test_numerical_stability(self) -> None:
         y_true = np.array([1, 0])
         y_pred_proba = np.array([1.0, 0.0])
 
@@ -44,7 +44,7 @@ class TestBinaryCrossEntropy:
 
         assert np.isfinite(loss)
 
-    def test_uniform_predictions(self):
+    def test_uniform_predictions(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred_proba = np.array([0.5, 0.5, 0.5, 0.5])
 
@@ -55,7 +55,7 @@ class TestBinaryCrossEntropy:
 
 
 class TestCategoricalCrossEntropy:
-    def test_perfect_predictions(self):
+    def test_perfect_predictions(self) -> None:
         y_true = np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
         y_pred_proba = np.array([[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]])
 
@@ -63,7 +63,7 @@ class TestCategoricalCrossEntropy:
 
         assert loss < 1e-10
 
-    def test_worst_predictions(self):
+    def test_worst_predictions(self) -> None:
         y_true = np.array([[1, 0, 0], [0, 1, 0]])
         y_pred_proba = np.array([[0.0, 0.5, 0.5], [0.5, 0.0, 0.5]])
 
@@ -71,7 +71,7 @@ class TestCategoricalCrossEntropy:
 
         assert loss > 10
 
-    def test_random_predictions(self):
+    def test_random_predictions(self) -> None:
         y_true = np.array([[1, 0], [0, 1]])
         y_pred_proba = np.array([[0.9, 0.1], [0.2, 0.8]])
 
@@ -80,7 +80,7 @@ class TestCategoricalCrossEntropy:
         expected = -(np.log(0.9) + np.log(0.8)) / 2
         np.testing.assert_allclose(loss, expected, rtol=1e-5)
 
-    def test_numerical_stability(self):
+    def test_numerical_stability(self) -> None:
         y_true = np.array([[1, 0, 0]])
         y_pred_proba = np.array([[1.0, 0.0, 0.0]])
 
@@ -90,7 +90,7 @@ class TestCategoricalCrossEntropy:
 
 
 class TestBinaryCrossEntropyGradient:
-    def test_zero_gradient(self):
+    def test_zero_gradient(self) -> None:
         X = np.array([[1, 2], [3, 4]])
         y_true = np.array([1, 0])
         y_pred_proba = np.array([1.0, 0.0])
@@ -100,7 +100,7 @@ class TestBinaryCrossEntropyGradient:
         np.testing.assert_allclose(grad_w, [0, 0], atol=1e-10)
         np.testing.assert_allclose(grad_b, 0.0, atol=1e-10)
 
-    def test_simple_gradient(self):
+    def test_simple_gradient(self) -> None:
         X = np.array([[1, 2], [3, 4]])
         y_true = np.array([1, 0])
         y_pred_proba = np.array([0.9, 0.2])
@@ -114,7 +114,7 @@ class TestBinaryCrossEntropyGradient:
         np.testing.assert_allclose(grad_w, expected_grad_w)
         np.testing.assert_allclose(grad_b, expected_grad_b)
 
-    def test_gradient_shape(self):
+    def test_gradient_shape(self) -> None:
         X = np.array([[1, 2, 3], [4, 5, 6]])
         y_true = np.array([1, 0])
         y_pred_proba = np.array([0.7, 0.3])
@@ -124,7 +124,7 @@ class TestBinaryCrossEntropyGradient:
         assert grad_w.shape == (3,)
         assert isinstance(grad_b, (float, np.floating))
 
-    def test_gradient_direction(self):
+    def test_gradient_direction(self) -> None:
         X = np.array([[1, 1]])
         y_true = np.array([1])
         y_pred_proba = np.array([0.3])
@@ -135,7 +135,7 @@ class TestBinaryCrossEntropyGradient:
 
 
 class TestCategoricalCrossEntropyGradient:
-    def test_zero_gradient(self):
+    def test_zero_gradient(self) -> None:
         X = np.array([[1, 2], [3, 4]])
         y_true = np.array([[1, 0], [0, 1]])
         y_pred_proba = np.array([[1.0, 0.0], [0.0, 1.0]])
@@ -145,7 +145,7 @@ class TestCategoricalCrossEntropyGradient:
         np.testing.assert_allclose(grad_w, np.zeros((2, 2)), atol=1e-10)
         np.testing.assert_allclose(grad_b, np.zeros(2), atol=1e-10)
 
-    def test_simple_gradient(self):
+    def test_simple_gradient(self) -> None:
         X = np.array([[1, 2], [3, 4]])
         y_true = np.array([[1, 0], [0, 1]])
         y_pred_proba = np.array([[0.9, 0.1], [0.2, 0.8]])
@@ -159,7 +159,7 @@ class TestCategoricalCrossEntropyGradient:
         np.testing.assert_allclose(grad_w, expected_grad_w)
         np.testing.assert_allclose(grad_b, expected_grad_b)
 
-    def test_gradient_shape(self):
+    def test_gradient_shape(self) -> None:
         X = np.array([[1, 2], [3, 4], [5, 6]])
         y_true = np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
         y_pred_proba = np.array(
@@ -171,7 +171,7 @@ class TestCategoricalCrossEntropyGradient:
         assert grad_w.shape == (2, 3)
         assert grad_b.shape == (3,)
 
-    def test_three_classes(self):
+    def test_three_classes(self) -> None:
         X = np.array([[1, 1]])
         y_true = np.array([[1, 0, 0]])
         y_pred_proba = np.array([[0.5, 0.3, 0.2]])

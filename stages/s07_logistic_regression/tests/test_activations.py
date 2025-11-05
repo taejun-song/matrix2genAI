@@ -13,69 +13,69 @@ from stages.s07_logistic_regression.starter.activations import (
 
 
 class TestSigmoid:
-    def test_zero_input(self):
+    def test_zero_input(self) -> None:
         z = np.array([0.0])
         result = sigmoid(z)
         np.testing.assert_allclose(result, [0.5])
 
-    def test_positive_values(self):
+    def test_positive_values(self) -> None:
         z = np.array([1.0, 2.0, 10.0])
         result = sigmoid(z)
         expected = 1 / (1 + np.exp(-z))
         np.testing.assert_allclose(result, expected)
 
-    def test_negative_values(self):
+    def test_negative_values(self) -> None:
         z = np.array([-1.0, -2.0, -10.0])
         result = sigmoid(z)
         expected = 1 / (1 + np.exp(-z))
         np.testing.assert_allclose(result, expected)
 
-    def test_large_values_no_overflow(self):
+    def test_large_values_no_overflow(self) -> None:
         z = np.array([100, 500, 1000])
         result = sigmoid(z)
         assert np.all(result > 0.999)
         assert np.all(~np.isnan(result))
         assert np.all(~np.isinf(result))
 
-    def test_large_negative_values_no_underflow(self):
+    def test_large_negative_values_no_underflow(self) -> None:
         z = np.array([-100, -500, -1000])
         result = sigmoid(z)
         assert np.all(result < 0.001)
         assert np.all(~np.isnan(result))
         assert np.all(~np.isinf(result))
 
-    def test_symmetry(self):
+    def test_symmetry(self) -> None:
         z = np.array([1.0, 2.0, 3.0])
         assert np.allclose(sigmoid(z) + sigmoid(-z), 1.0)
 
 
 class TestSoftmax:
-    def test_two_classes(self):
+    def test_two_classes(self) -> None:
         z = np.array([[1.0, 2.0]])
         result = softmax(z)
         assert np.allclose(result.sum(axis=1), [1.0])
         assert np.all(result > 0)
         assert np.all(result < 1)
 
-    def test_three_classes(self):
+    def test_three_classes(self) -> None:
         z = np.array([[1.0, 2.0, 3.0], [1.0, 1.0, 1.0]])
         result = softmax(z)
         np.testing.assert_allclose(result.sum(axis=1), [1.0, 1.0])
 
-    def test_uniform_inputs(self):
+    def test_uniform_inputs(self) -> None:
         z = np.array([[1.0, 1.0, 1.0]])
         result = softmax(z)
         expected = np.array([[1/3, 1/3, 1/3]])
         np.testing.assert_allclose(result, expected, rtol=1e-5)
 
-    def test_numerical_stability(self):
+    def test_numerical_stability(self) -> None:
         z = np.array([[1000, 1001, 1002]])
         result = softmax(z)
         assert np.all(~np.isnan(result))
         assert np.all(~np.isinf(result))
         assert np.allclose(result.sum(axis=1), [1.0])
 
-    def test_preserves_argmax(self):
+    def test_preserves_argmax(self) -> None:
         z = np.array([[1.0, 5.0, 2.0], [3.0, 1.0, 2.0]])
         result = softmax(z)
         assert np.argmax(result[0]) == 1
@@ -83,7 +83,7 @@ class TestSoftmax:
 
 
 class TestPredictProbaBinary:
-    def test_simple_prediction(self):
+    def test_simple_prediction(self) -> None:
         X = np.array([[1.0, 2.0], [3.0, 4.0]])
         weights = np.array([0.5, 0.5])
         bias = 0.0
@@ -94,7 +94,7 @@ class TestPredictProbaBinary:
         expected = 1 / (1 + np.exp(-z))
         np.testing.assert_allclose(probs, expected)
 
-    def test_with_bias(self):
+    def test_with_bias(self) -> None:
         X = np.array([[0.0, 0.0]])
         weights = np.array([1.0, 1.0])
         bias = 2.0
@@ -104,7 +104,7 @@ class TestPredictProbaBinary:
         expected = sigmoid(np.array([2.0]))
         np.testing.assert_allclose(probs, expected)
 
-    def test_shape(self):
+    def test_shape(self) -> None:
         X = np.array([[1, 2], [3, 4], [5, 6]])
         weights = np.array([0.5, 0.5])
         bias = 0.0
@@ -115,7 +115,7 @@ class TestPredictProbaBinary:
 
 
 class TestPredictProbaMulticlass:
-    def test_two_classes(self):
+    def test_two_classes(self) -> None:
         X = np.array([[1.0, 2.0]])
         weights = np.array([[0.5, 0.3], [0.2, 0.4]])
         bias = np.array([0.0, 0.1])
@@ -125,7 +125,7 @@ class TestPredictProbaMulticlass:
         assert probs.shape == (1, 2)
         assert np.allclose(probs.sum(axis=1), [1.0])
 
-    def test_three_classes(self):
+    def test_three_classes(self) -> None:
         X = np.array([[1.0, 2.0], [3.0, 4.0]])
         weights = np.array([[0.5, 0.3, 0.2], [0.2, 0.4, 0.1]])
         bias = np.array([0.0, 0.0, 0.0])
@@ -137,7 +137,7 @@ class TestPredictProbaMulticlass:
 
 
 class TestPredictBinary:
-    def test_default_threshold(self):
+    def test_default_threshold(self) -> None:
         X = np.array([[1.0, 2.0], [0.0, 0.0], [-1.0, -2.0]])
         weights = np.array([1.0, 1.0])
         bias = 0.0
@@ -148,7 +148,7 @@ class TestPredictBinary:
         assert preds[1] == 0
         assert preds[2] == 0
 
-    def test_custom_threshold(self):
+    def test_custom_threshold(self) -> None:
         X = np.array([[1.0, 1.0]])
         weights = np.array([0.5, 0.5])
         bias = 0.0
@@ -159,7 +159,7 @@ class TestPredictBinary:
         assert preds_low[0] == 1
         assert preds_high[0] in [0, 1]
 
-    def test_output_type(self):
+    def test_output_type(self) -> None:
         X = np.array([[1.0, 2.0]])
         weights = np.array([0.5, 0.5])
         bias = 0.0
@@ -170,7 +170,7 @@ class TestPredictBinary:
 
 
 class TestPredictMulticlass:
-    def test_simple_prediction(self):
+    def test_simple_prediction(self) -> None:
         X = np.array([[1.0, 2.0]])
         weights = np.array([[1.0, 0.0, 0.0], [0.0, 1.0, 0.0]])
         bias = np.array([0.0, 0.0, 0.0])
@@ -180,7 +180,7 @@ class TestPredictMulticlass:
         assert preds.shape == (1,)
         assert preds[0] in [0, 1, 2]
 
-    def test_three_samples(self):
+    def test_three_samples(self) -> None:
         X = np.array([[1.0, 0.0], [0.0, 1.0], [1.0, 1.0]])
         weights = np.array([[2.0, 0.0], [0.0, 2.0]])
         bias = np.array([0.0, 0.0])

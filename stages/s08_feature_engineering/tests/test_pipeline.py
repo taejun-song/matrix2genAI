@@ -18,7 +18,7 @@ from stages.s08_feature_engineering.starter.scaling import (
 
 
 class TestPreprocessingPipeline:
-    def test_complete_pipeline(self):
+    def test_complete_pipeline(self) -> None:
         np.random.seed(42)
 
         X_train = np.random.randn(100, 10)
@@ -40,7 +40,7 @@ class TestPreprocessingPipeline:
         X_train_final = X_train_var[:, corr_mask]
         assert X_train_final.shape[1] <= X_train_var.shape[1]
 
-    def test_train_test_consistency(self):
+    def test_train_test_consistency(self) -> None:
         np.random.seed(42)
 
         X_train = np.random.randn(50, 5)
@@ -61,7 +61,7 @@ class TestPreprocessingPipeline:
 
         assert X_train_var.shape[1] == X_test_var.shape[1]
 
-    def test_outlier_handling_pipeline(self):
+    def test_outlier_handling_pipeline(self) -> None:
         np.random.seed(42)
 
         X = np.random.randn(100, 3)
@@ -76,7 +76,7 @@ class TestPreprocessingPipeline:
         X_clean = X[~outliers.any(axis=1)]
         assert X_clean.shape[0] < X.shape[0]
 
-    def test_encoding_in_pipeline(self):
+    def test_encoding_in_pipeline(self) -> None:
         y_train = np.array(["cat", "dog", "cat", "bird", "dog"])
 
         y_encoded, classes = label_encode(y_train)
@@ -85,7 +85,7 @@ class TestPreprocessingPipeline:
         assert y_onehot.shape == (5, 3)
         assert y_onehot.sum() == 5
 
-    def test_no_data_leakage(self):
+    def test_no_data_leakage(self) -> None:
         np.random.seed(42)
 
         X_all = np.random.randn(100, 5)
@@ -103,7 +103,7 @@ class TestPreprocessingPipeline:
         assert train_min.shape == (5,)
         assert train_max.shape == (5,)
 
-    def test_feature_selection_pipeline(self):
+    def test_feature_selection_pipeline(self) -> None:
         X = np.random.randn(50, 10)
 
         X[:, 0] = 5.0

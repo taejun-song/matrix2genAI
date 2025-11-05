@@ -11,7 +11,7 @@ from stages.s08_feature_engineering.starter.encoding import (
 
 
 class TestLabelEncode:
-    def test_string_labels(self):
+    def test_string_labels(self) -> None:
         y = np.array(["cat", "dog", "cat", "bird", "dog"])
 
         y_encoded, classes = label_encode(y)
@@ -22,7 +22,7 @@ class TestLabelEncode:
         assert y_encoded[0] == y_encoded[2]
         assert y_encoded[1] == y_encoded[4]
 
-    def test_numeric_labels(self):
+    def test_numeric_labels(self) -> None:
         y = np.array([10, 20, 10, 30])
 
         y_encoded, classes = label_encode(y)
@@ -31,7 +31,7 @@ class TestLabelEncode:
         assert y_encoded[0] == y_encoded[2]
         assert all(0 <= val < 3 for val in y_encoded)
 
-    def test_single_class(self):
+    def test_single_class(self) -> None:
         y = np.array(["a", "a", "a"])
 
         y_encoded, classes = label_encode(y)
@@ -39,7 +39,7 @@ class TestLabelEncode:
         assert len(classes) == 1
         assert all(y_encoded == 0)
 
-    def test_classes_sorted(self):
+    def test_classes_sorted(self) -> None:
         y = np.array(["zebra", "apple", "mango"])
 
         y_encoded, classes = label_encode(y)
@@ -49,7 +49,7 @@ class TestLabelEncode:
 
 
 class TestLabelDecode:
-    def test_decode_integers(self):
+    def test_decode_integers(self) -> None:
         y_encoded = np.array([0, 1, 0, 2])
         classes = np.array(["bird", "cat", "dog"])
 
@@ -58,7 +58,7 @@ class TestLabelDecode:
         expected = np.array(["bird", "cat", "bird", "dog"])
         np.testing.assert_array_equal(y, expected)
 
-    def test_roundtrip(self):
+    def test_roundtrip(self) -> None:
         y_original = np.array(["cat", "dog", "cat", "bird"])
 
         y_encoded, classes = label_encode(y_original)
@@ -66,7 +66,7 @@ class TestLabelDecode:
 
         np.testing.assert_array_equal(y_original, y_decoded)
 
-    def test_numeric_classes(self):
+    def test_numeric_classes(self) -> None:
         y_encoded = np.array([0, 1, 2])
         classes = np.array([100, 200, 300])
 
@@ -76,7 +76,7 @@ class TestLabelDecode:
 
 
 class TestOneHotEncode:
-    def test_basic_encoding(self):
+    def test_basic_encoding(self) -> None:
         y = np.array([0, 1, 0, 2])
 
         y_onehot = one_hot_encode(y, n_classes=3)
@@ -84,7 +84,7 @@ class TestOneHotEncode:
         expected = np.array([[1, 0, 0], [0, 1, 0], [1, 0, 0], [0, 0, 1]])
         np.testing.assert_array_equal(y_onehot, expected)
 
-    def test_auto_detect_classes(self):
+    def test_auto_detect_classes(self) -> None:
         y = np.array([0, 1, 2])
 
         y_onehot = one_hot_encode(y)
@@ -92,7 +92,7 @@ class TestOneHotEncode:
         assert y_onehot.shape == (3, 3)
         assert y_onehot.sum() == 3
 
-    def test_binary_classification(self):
+    def test_binary_classification(self) -> None:
         y = np.array([0, 1, 1, 0])
 
         y_onehot = one_hot_encode(y, n_classes=2)
@@ -101,7 +101,7 @@ class TestOneHotEncode:
         expected = np.array([[1, 0], [0, 1], [0, 1], [1, 0]])
         np.testing.assert_array_equal(y_onehot, expected)
 
-    def test_single_class(self):
+    def test_single_class(self) -> None:
         y = np.array([0, 0, 0])
 
         y_onehot = one_hot_encode(y, n_classes=1)
@@ -109,7 +109,7 @@ class TestOneHotEncode:
         expected = np.array([[1], [1], [1]])
         np.testing.assert_array_equal(y_onehot, expected)
 
-    def test_row_sum_equals_one(self):
+    def test_row_sum_equals_one(self) -> None:
         y = np.array([0, 1, 2, 1, 0])
 
         y_onehot = one_hot_encode(y, n_classes=3)
@@ -118,7 +118,7 @@ class TestOneHotEncode:
 
 
 class TestOneHotDecode:
-    def test_basic_decoding(self):
+    def test_basic_decoding(self) -> None:
         y_onehot = np.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
 
         y = one_hot_decode(y_onehot)
@@ -126,7 +126,7 @@ class TestOneHotDecode:
         expected = np.array([0, 1, 2])
         np.testing.assert_array_equal(y, expected)
 
-    def test_roundtrip(self):
+    def test_roundtrip(self) -> None:
         y_original = np.array([0, 1, 0, 2, 1])
 
         y_onehot = one_hot_encode(y_original, n_classes=3)
@@ -134,7 +134,7 @@ class TestOneHotDecode:
 
         np.testing.assert_array_equal(y_original, y_decoded)
 
-    def test_binary_classification(self):
+    def test_binary_classification(self) -> None:
         y_onehot = np.array([[1, 0], [0, 1], [1, 0]])
 
         y = one_hot_decode(y_onehot)
@@ -142,7 +142,7 @@ class TestOneHotDecode:
         expected = np.array([0, 1, 0])
         np.testing.assert_array_equal(y, expected)
 
-    def test_many_classes(self):
+    def test_many_classes(self) -> None:
         n_classes = 10
         y_original = np.arange(n_classes)
 

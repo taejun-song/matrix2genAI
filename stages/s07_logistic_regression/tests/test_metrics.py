@@ -12,7 +12,7 @@ from stages.s07_logistic_regression.starter.metrics import (
 
 
 class TestAccuracy:
-    def test_perfect_predictions(self):
+    def test_perfect_predictions(self) -> None:
         y_true = np.array([1, 0, 1, 0, 1])
         y_pred = np.array([1, 0, 1, 0, 1])
 
@@ -20,7 +20,7 @@ class TestAccuracy:
 
         assert acc == 1.0
 
-    def test_worst_predictions(self):
+    def test_worst_predictions(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred = np.array([0, 1, 0, 1])
 
@@ -28,7 +28,7 @@ class TestAccuracy:
 
         assert acc == 0.0
 
-    def test_partial_correct(self):
+    def test_partial_correct(self) -> None:
         y_true = np.array([1, 0, 1, 1, 0])
         y_pred = np.array([1, 0, 0, 1, 0])
 
@@ -36,7 +36,7 @@ class TestAccuracy:
 
         assert acc == 0.8
 
-    def test_multiclass(self):
+    def test_multiclass(self) -> None:
         y_true = np.array([0, 1, 2, 1, 0])
         y_pred = np.array([0, 1, 1, 1, 0])
 
@@ -46,7 +46,7 @@ class TestAccuracy:
 
 
 class TestConfusionMatrix:
-    def test_binary_perfect(self):
+    def test_binary_perfect(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred = np.array([1, 0, 1, 0])
 
@@ -55,7 +55,7 @@ class TestConfusionMatrix:
         expected = np.array([[2, 0], [0, 2]])
         np.testing.assert_array_equal(cm, expected)
 
-    def test_binary_with_errors(self):
+    def test_binary_with_errors(self) -> None:
         y_true = np.array([1, 0, 1, 1, 0, 0])
         y_pred = np.array([1, 0, 0, 1, 0, 1])
 
@@ -64,7 +64,7 @@ class TestConfusionMatrix:
         expected = np.array([[2, 1], [1, 2]])
         np.testing.assert_array_equal(cm, expected)
 
-    def test_multiclass(self):
+    def test_multiclass(self) -> None:
         y_true = np.array([0, 1, 2, 1, 0])
         y_pred = np.array([0, 1, 1, 1, 0])
 
@@ -73,7 +73,7 @@ class TestConfusionMatrix:
         expected = np.array([[2, 0, 0], [0, 2, 0], [0, 1, 0]])
         np.testing.assert_array_equal(cm, expected)
 
-    def test_auto_detect_classes(self):
+    def test_auto_detect_classes(self) -> None:
         y_true = np.array([0, 1, 2])
         y_pred = np.array([0, 1, 2])
 
@@ -81,7 +81,7 @@ class TestConfusionMatrix:
 
         assert cm.shape == (3, 3)
 
-    def test_three_classes_complex(self):
+    def test_three_classes_complex(self) -> None:
         y_true = np.array([0, 0, 1, 1, 2, 2])
         y_pred = np.array([0, 1, 1, 2, 2, 0])
 
@@ -92,7 +92,7 @@ class TestConfusionMatrix:
 
 
 class TestPrecisionRecallF1:
-    def test_binary_perfect(self):
+    def test_binary_perfect(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred = np.array([1, 0, 1, 0])
 
@@ -102,7 +102,7 @@ class TestPrecisionRecallF1:
         assert recall == 1.0
         assert f1 == 1.0
 
-    def test_binary_with_errors(self):
+    def test_binary_with_errors(self) -> None:
         y_true = np.array([1, 0, 1, 1, 0])
         y_pred = np.array([1, 0, 0, 1, 0])
 
@@ -112,7 +112,7 @@ class TestPrecisionRecallF1:
         assert recall == 2 / 3
         np.testing.assert_allclose(f1, 0.8, rtol=1e-5)
 
-    def test_binary_all_negative(self):
+    def test_binary_all_negative(self) -> None:
         y_true = np.array([0, 0, 0, 0])
         y_pred = np.array([0, 0, 0, 0])
 
@@ -122,7 +122,7 @@ class TestPrecisionRecallF1:
         assert recall == 0.0
         assert f1 == 0.0
 
-    def test_binary_false_positives(self):
+    def test_binary_false_positives(self) -> None:
         y_true = np.array([0, 0, 1, 1])
         y_pred = np.array([1, 1, 1, 1])
 
@@ -132,7 +132,7 @@ class TestPrecisionRecallF1:
         assert recall == 1.0
         np.testing.assert_allclose(f1, 2 / 3, rtol=1e-5)
 
-    def test_binary_false_negatives(self):
+    def test_binary_false_negatives(self) -> None:
         y_true = np.array([1, 1, 0, 0])
         y_pred = np.array([0, 0, 0, 0])
 
@@ -142,7 +142,7 @@ class TestPrecisionRecallF1:
         assert recall == 0.0
         assert f1 == 0.0
 
-    def test_multiclass_macro(self):
+    def test_multiclass_macro(self) -> None:
         y_true = np.array([0, 0, 1, 1, 2, 2])
         y_pred = np.array([0, 0, 1, 1, 2, 2])
 
@@ -154,7 +154,7 @@ class TestPrecisionRecallF1:
 
 
 class TestROCAUCScore:
-    def test_perfect_ranking(self):
+    def test_perfect_ranking(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred_proba = np.array([0.9, 0.3, 0.8, 0.2])
 
@@ -162,7 +162,7 @@ class TestROCAUCScore:
 
         assert auc == 1.0
 
-    def test_worst_ranking(self):
+    def test_worst_ranking(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred_proba = np.array([0.1, 0.9, 0.2, 0.8])
 
@@ -170,7 +170,7 @@ class TestROCAUCScore:
 
         assert auc == 0.0
 
-    def test_random_ranking(self):
+    def test_random_ranking(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred_proba = np.array([0.5, 0.5, 0.5, 0.5])
 
@@ -178,7 +178,7 @@ class TestROCAUCScore:
 
         assert auc == 0.5
 
-    def test_good_ranking(self):
+    def test_good_ranking(self) -> None:
         y_true = np.array([1, 1, 0, 0, 1, 0])
         y_pred_proba = np.array([0.9, 0.8, 0.4, 0.3, 0.7, 0.2])
 
@@ -188,7 +188,7 @@ class TestROCAUCScore:
 
 
 class TestClassificationReport:
-    def test_binary_report(self):
+    def test_binary_report(self) -> None:
         y_true = np.array([1, 0, 1, 1, 0])
         y_pred = np.array([1, 0, 0, 1, 0])
         y_pred_proba = np.array([0.9, 0.1, 0.4, 0.8, 0.2])
@@ -205,7 +205,7 @@ class TestClassificationReport:
         assert report["accuracy"] == 0.8
         assert 0 <= report["roc_auc"] <= 1
 
-    def test_multiclass_report(self):
+    def test_multiclass_report(self) -> None:
         y_true = np.array([0, 1, 2, 1, 0])
         y_pred = np.array([0, 1, 1, 1, 0])
 
@@ -219,7 +219,7 @@ class TestClassificationReport:
 
         assert report["accuracy"] == 0.8
 
-    def test_perfect_predictions(self):
+    def test_perfect_predictions(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred = np.array([1, 0, 1, 0])
         y_pred_proba = np.array([1.0, 0.0, 1.0, 0.0])
@@ -231,7 +231,7 @@ class TestClassificationReport:
         assert report["recall"] == 1.0
         assert report["f1"] == 1.0
 
-    def test_without_probabilities(self):
+    def test_without_probabilities(self) -> None:
         y_true = np.array([1, 0, 1, 0])
         y_pred = np.array([1, 0, 0, 0])
 
