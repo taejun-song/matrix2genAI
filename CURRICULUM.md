@@ -134,22 +134,22 @@ A comprehensive, hands-on curriculum teaching the complete journey from mathemat
 ---
 
 ### s08: Feature Engineering & Data Preprocessing (2-3 days) ⭐⭐
-**Status:** 🔄 To be created
+**Status:** ✅ Complete
 
 **Topics:**
 - Handling missing data (imputation strategies)
 - Categorical encoding (one-hot, label encoding)
 - Feature selection (variance threshold, correlation)
-- Feature extraction (PCA basics)
-- Outlier detection and handling
-- Data augmentation basics
+- Outlier detection (IQR method)
+- Scaling and transformation (min-max, robust)
 
 **Key Implementations:**
-- `SimpleImputer` (mean, median, mode)
-- `OneHotEncoder`, `LabelEncoder`
-- `PCA` implementation
-- Outlier detection methods
-- Feature importance ranking
+- 12 functions across 3 modules (imputation, encoding, scaling)
+- Missing data handling (mean/median/mode/constant imputation)
+- Label and one-hot encoding
+- Min-max and robust scaling
+- Variance threshold and correlation filtering
+- Comprehensive 60-test suite
 
 **Real-world applications:** Data cleaning pipelines, dimensionality reduction
 
