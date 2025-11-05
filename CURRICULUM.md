@@ -112,22 +112,22 @@ A comprehensive, hands-on curriculum teaching the complete journey from mathemat
 ---
 
 ### s07: Logistic Regression & Classification (3-4 days) ⭐⭐⭐
-**Status:** 🔄 To be created
+**Status:** ✅ Complete
 
 **Topics:**
 - Binary classification
 - Sigmoid function and logistic model
 - Cross-entropy loss
-- Multi-class classification (one-vs-rest, softmax)
+- Multi-class classification (softmax)
 - Classification metrics (accuracy, precision, recall, F1, ROC-AUC)
 - Decision boundaries
 
 **Key Implementations:**
-- `LogisticRegression` class
+- 15 functions across 3 modules (activations, losses, metrics)
 - `sigmoid`, `softmax` activation functions
-- Binary and multi-class cross-entropy loss
-- Confusion matrix and classification metrics
-- Decision boundary visualization helpers
+- Binary and multi-class cross-entropy loss and gradients
+- Complete classification metrics suite
+- Comprehensive 70-test suite
 
 **Real-world applications:** Spam detection, medical diagnosis, fraud detection
 
