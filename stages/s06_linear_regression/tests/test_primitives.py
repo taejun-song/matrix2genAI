@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import numpy as np
-import pytest
 
 from stages.s06_linear_regression.starter.primitives import (
     mse_gradient,

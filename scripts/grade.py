@@ -126,7 +126,7 @@ def main() -> int:
     if not args.json:
         print(f"Running tests for {stage_path}...")
 
-    success = run_tests(stage_path, output_file, args.timeout)
+    run_tests(stage_path, output_file, args.timeout)
     grade_data = grade_stage(output_file)
 
     if args.json:

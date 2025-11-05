@@ -84,8 +84,8 @@ def mse_gradient(
         >>> grad_b
         0.5
     """
-    n = len(y_true)
-    errors = y_pred - y_true
+    len(y_true)
+    y_pred - y_true
 
     # TODO: Compute weight gradient
     # HINT: grad_w = (2/n) * X.T @ errors

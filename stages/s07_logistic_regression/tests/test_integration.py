@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import numpy as np
-import pytest
 
 from stages.s07_logistic_regression.starter.activations import (
     predict_binary,
@@ -71,7 +70,7 @@ class TestBinaryClassificationPipeline:
 
         losses = []
 
-        for epoch in range(50):
+        for _epoch in range(50):
             y_pred_proba = predict_proba_binary(X, weights, bias)
             loss = binary_cross_entropy(y, y_pred_proba)
             losses.append(loss)
@@ -82,7 +81,7 @@ class TestBinaryClassificationPipeline:
             bias -= learning_rate * grad_b
 
         assert losses[-1] < losses[0]
-        assert all(not np.isnan(l) for l in losses)
+        assert all(not np.isnan(loss) for loss in losses)
 
     def test_binary_classification_report(self):
         np.random.seed(42)
@@ -168,7 +167,7 @@ class TestMulticlassClassificationPipeline:
 
         losses = []
 
-        for epoch in range(50):
+        for _epoch in range(50):
             y_pred_proba = predict_proba_multiclass(X, weights, bias)
             loss = categorical_cross_entropy(y_onehot, y_pred_proba)
             losses.append(loss)
@@ -179,7 +178,7 @@ class TestMulticlassClassificationPipeline:
             bias -= learning_rate * grad_b
 
         assert losses[-1] < losses[0]
-        assert all(not np.isnan(l) for l in losses)
+        assert all(not np.isnan(loss) for loss in losses)
 
 
 class TestNumericalStability:

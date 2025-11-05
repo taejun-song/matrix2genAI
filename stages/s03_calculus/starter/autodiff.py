@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import numpy as np
-
 
 class Dual:
     """Dual number for forward-mode automatic differentiation."""

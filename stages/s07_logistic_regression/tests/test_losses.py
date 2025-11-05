@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import numpy as np
-import pytest
 
 from stages.s07_logistic_regression.starter.losses import (
     binary_cross_entropy,

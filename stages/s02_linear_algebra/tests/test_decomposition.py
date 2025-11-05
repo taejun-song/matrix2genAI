@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import numpy as np
-import pytest
 
 from stages.s02_linear_algebra.starter.decomposition import (
     determinant_lu,

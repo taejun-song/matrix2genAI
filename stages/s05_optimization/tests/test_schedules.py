@@ -2,7 +2,11 @@ from __future__ import annotations
 
 import numpy as np
 
-from stages.s05_optimization.starter.schedules import cosine_annealing, exponential_decay, step_decay
+from stages.s05_optimization.starter.schedules import (
+    cosine_annealing,
+    exponential_decay,
+    step_decay,
+)
 
 
 def test_step_decay() -> None:

@@ -22,8 +22,8 @@ class TestMatrixMultiplyNaive:
 
     def test_identity_multiply(self) -> None:
         A = np.array([[1.0, 2.0], [3.0, 4.0]])
-        I = np.eye(2)
-        result = matrix_multiply_naive(A, I)
+        identity = np.eye(2)
+        result = matrix_multiply_naive(A, identity)
         assert np.allclose(result, A)
 
     def test_non_square_multiply(self) -> None:
@@ -83,8 +83,8 @@ class TestMatrixTrace:
         assert np.isclose(result, 5.0)
 
     def test_identity_matrix(self) -> None:
-        I = np.eye(5)
-        result = matrix_trace(I)
+        identity = np.eye(5)
+        result = matrix_trace(identity)
         assert np.isclose(result, 5.0)
 
     def test_non_square_raises(self) -> None:
@@ -101,8 +101,8 @@ class TestFrobeniusNorm:
         assert np.isclose(result, expected)
 
     def test_identity_matrix(self) -> None:
-        I = np.eye(3)
-        result = frobenius_norm(I)
+        identity = np.eye(3)
+        result = frobenius_norm(identity)
         expected = np.sqrt(3.0)
         assert np.isclose(result, expected)
 
