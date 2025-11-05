@@ -27,6 +27,6 @@ jobs:
       - name: Typecheck
         run: uv run mypy src stages
 
-      - name: Tests
-        run: uv run pytest -q
+      - name: Test discovery
+        run: uv run pytest --co -q
 
