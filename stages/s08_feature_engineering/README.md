@@ -4,9 +4,43 @@
 
 Build a complete data preprocessing pipeline from simple, composable functions. Transform raw, messy data into clean features ready for machine learning.
 
+**The Big Idea:** "Garbage in, garbage out" - even the best ML algorithm fails with bad features. Learn to clean, transform, and select features that make models work.
+
+## Getting Started
+
+### Setup
+
+```bash
+# Navigate to this stage
+cd stages/s08_feature_engineering
+
+# Run tests (using uv - recommended)
+uv run pytest tests/ -v
+
+# Or activate venv first
+source .venv/bin/activate  # On Unix/macOS
+pytest tests/ -v
+```
+
+### Files You'll Edit
+
+- `starter/imputation.py` - Handle missing data
+- `starter/encoding.py` - Convert categorical → numerical
+- `starter/scaling.py` - Normalize, select features, detect outliers
+- Tests in `tests/` verify your work
+
+### Workflow
+
+1. Read conceptual sections below
+2. Implement sub-functions (1-3 lines, follow TODOs)
+3. Test: `uv run pytest tests/test_imputation.py -v`
+4. Compose into data pipelines!
+
+---
+
 ## Learning Philosophy
 
-You will implement **12 simple functions** organized into 3 modules. Then you'll compose them into:
+You will implement **small building blocks** organized into 3 modules. Then you'll compose them into:
 - Complete data cleaning pipelines
 - Feature transformation workflows
 - Dimensionality reduction systems

@@ -17,6 +17,39 @@ You will implement **small building blocks** (1-3 lines each) that compose into 
 **Time:** 3-4 hours
 **Difficulty:** ⭐⭐⭐
 
+## Getting Started
+
+### Setup
+
+```bash
+# Navigate to this stage
+cd stages/s07_logistic_regression
+
+# Run tests (using uv - recommended)
+uv run pytest tests/ -v
+
+# Or activate venv first
+source .venv/bin/activate  # On Unix/macOS
+pytest tests/ -v
+```
+
+### Files You'll Edit
+
+- `starter/activations.py` - Sigmoid, softmax, prediction functions
+- `starter/losses.py` - Cross-entropy loss and gradients
+- `starter/metrics.py` - Accuracy, confusion matrix, ROC-AUC
+- Tests in `tests/` verify your implementations
+
+### Workflow
+
+1. Read conceptual sections below to understand WHY
+2. Implement sub-functions (1-3 lines each, follow TODOs)
+3. Test each module: `uv run pytest tests/test_activations.py -v`
+4. Compose functions into training loops
+5. Evaluate with metrics!
+
+---
+
 ## Conceptual Understanding
 
 ### Why Not Just Use Linear Regression for Classification?
