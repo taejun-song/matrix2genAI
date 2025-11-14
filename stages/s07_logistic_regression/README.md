@@ -4,9 +4,11 @@
 
 Build a complete classification system from simple, composable functions. Just like linear regression, but for predicting categories instead of numbers.
 
+**The Big Idea:** Logistic regression transforms linear regression's continuous outputs into probabilities, allowing us to classify data into categories. It's the foundation for neural networks!
+
 ## Learning Philosophy
 
-You will implement **10 simple functions** (each 1-15 lines). Then you'll compose them into:
+You will implement **small building blocks** (1-3 lines each) that compose into complete algorithms:
 - Binary and multi-class classifiers
 - Training loops with cross-entropy loss
 - Classification metrics and evaluation
@@ -14,6 +16,47 @@ You will implement **10 simple functions** (each 1-15 lines). Then you'll compos
 
 **Time:** 3-4 hours
 **Difficulty:** ⭐⭐⭐
+
+## Conceptual Understanding
+
+### Why Not Just Use Linear Regression for Classification?
+
+Linear regression outputs can be anything: -1000, 3.7, 1000000. But for classification, we need:
+- **Probabilities**: values between 0 and 1
+- **Interpretability**: "70% chance this email is spam"
+- **Decision boundaries**: clear separation between classes
+
+**Example Problem:**
+```
+Email classification: spam (1) or not spam (0)
+
+Bad (linear regression):
+  ŷ = Xw + b = -2.5  ❌  What does -2.5 mean?
+  ŷ = Xw + b = 3.7   ❌  Probability > 1?
+
+Good (logistic regression):
+  p = σ(Xw + b) = 0.08  ✓  8% chance of spam → not spam
+  p = σ(Xw + b) = 0.95  ✓  95% chance of spam → spam!
+```
+
+### The Sigmoid Function: From Linear to Probability
+
+The sigmoid function σ(z) = 1/(1+e^(-z)) is the magic bridge:
+
+```
+Input (linear):  z = -∞ ... -2 ... 0 ... 2 ... +∞
+                     ↓       ↓     ↓     ↓      ↓
+Sigmoid output:  p =  0    0.12  0.5  0.88    1
+
+Properties:
+  • S-shaped curve (smooth transition)
+  • Always outputs between 0 and 1
+  • σ(0) = 0.5 (neutral decision boundary)
+  • σ(large positive) ≈ 1 (confident "yes")
+  • σ(large negative) ≈ 0 (confident "no")
+```
+
+**Intuition:** Think of sigmoid as a "soft threshold" - instead of a hard cutoff at 0 (like `z > 0 ? 1 : 0`), it gradually transitions from 0 to 1, giving us confidence levels.
 
 ## What You'll Build
 
@@ -47,6 +90,83 @@ Using these blocks, you'll write:
 - Decision boundary visualizations
 
 ## Mathematical Background
+
+### Understanding Cross-Entropy Loss
+
+**Why not use MSE for classification?**
+
+Mean Squared Error penalizes all errors equally:
+```
+Wrong prediction with MSE:
+  y=1, p=0.1  → (1-0.1)² = 0.81
+  y=1, p=0.9  → (1-0.9)² = 0.01
+
+Problem: MSE doesn't care much about being "confidently wrong"
+  Predicting 0.1 when answer is 1 should be heavily penalized!
+```
+
+**Cross-Entropy: Confidence-Aware Loss**
+
+Cross-entropy penalizes confident mistakes harshly:
+```
+Binary Cross-Entropy:
+  y=1, p=0.9  → -log(0.9)   = 0.11  ✓ Good, low loss
+  y=1, p=0.5  → -log(0.5)   = 0.69
+  y=1, p=0.1  → -log(0.1)   = 2.30  ❌ Bad, high loss!
+  y=1, p=0.01 → -log(0.01)  = 4.61  ❌ VERY BAD, huge loss!
+
+Intuition: -log(p) shoots to infinity as p→0
+  Being confidently wrong (p=0.01 when y=1) is heavily punished!
+```
+
+**The Full Formula:**
+```
+L = -(1/n) Σᵢ [yᵢ log(pᵢ) + (1-yᵢ) log(1-pᵢ)]
+
+When y=1: L = -log(p)     (want p close to 1)
+When y=0: L = -log(1-p)   (want p close to 0)
+```
+
+### From Binary to Multi-Class: Softmax
+
+**Sigmoid generalizes to Softmax for K classes:**
+
+```
+Binary (2 classes):
+  p(class 1) = σ(z) = 1/(1+e^(-z))
+  p(class 0) = 1 - σ(z)
+
+Multi-class (K classes):
+  p(class j) = e^(zⱼ) / Σₖ e^(zₖ)   for j=1,2,...,K
+
+Example with 3 classes (cat, dog, bird):
+  z = [2.0, 1.0, 0.1]  (raw scores)
+        ↓ softmax
+  p = [0.66, 0.24, 0.10]  (probabilities sum to 1)
+  Prediction: cat (highest probability)
+```
+
+**Why exponential?**
+- Ensures all outputs are positive
+- Amplifies differences (2.0 vs 1.0 → 0.66 vs 0.24, clear winner)
+- Differentiable (can use gradient descent)
+
+### The Gradient Miracle
+
+**Amazing fact:** Despite using sigmoid/softmax, the gradient has the same simple form!
+
+```
+For both binary and multi-class:
+  ∂L/∂w = (1/n) Xᵀ(predicted - actual)
+
+This is the SAME as linear regression gradient!
+  The sigmoid/softmax cancels out when we take derivatives
+  of the cross-entropy loss. Mathematical beauty!
+```
+
+---
+
+## Detailed Mathematical Formulas
 
 ### Logistic Regression (Binary)
 
