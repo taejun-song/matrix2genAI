@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import numpy as np
 
-
 # ============================================================================
 # Building Block 5: Cross-Entropy Loss Components
 # ============================================================================

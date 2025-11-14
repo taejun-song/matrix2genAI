@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import numpy as np
 
-
 # ============================================================================
 # Building Block 1: Numerically Stable Sigmoid Components
 # ============================================================================
